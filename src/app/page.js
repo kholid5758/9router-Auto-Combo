@@ -2041,21 +2041,15 @@ export default function ComboGeneratorPage() {
                             </button>
                           )
                         ) : (
-                          <div className="flex items-center justify-end space-x-2">
+                          <div className="flex items-center justify-end">
                             <button
                               disabled={testingAllModels}
                               onClick={() => handleTestAllModels(p.providerKey || p.key)}
-                              className="px-2.5 py-1 rounded-lg bg-blue-600/20 hover:bg-blue-600/30 text-blue-600 dark:text-blue-400 border border-blue-500/30 font-bold text-[11px] transition disabled:opacity-50 disabled:cursor-not-allowed flex items-center space-x-1"
+                              className="px-3 py-1 rounded-lg bg-blue-600/20 hover:bg-blue-600/30 text-blue-600 dark:text-blue-400 border border-blue-500/30 font-bold text-[11px] transition disabled:opacity-50 disabled:cursor-not-allowed flex items-center space-x-1"
                               title={`Test semua model untuk provider ${p.label}`}
                             >
                               <span>⚡ Test</span>
                             </button>
-                            <Link
-                              href={`/dashboard/providers/${p.providerKey || p.key}`}
-                              className="px-2.5 py-1 rounded-lg bg-surface-2 hover:bg-surface-3 text-text-main text-[11px] font-medium transition"
-                            >
-                              Detail
-                            </Link>
                           </div>
                         )}
                       </td>

@@ -98,12 +98,12 @@ export const ANTIGRAVITY_IDE_USER_AGENT = `antigravity/ide/${ANTIGRAVITY_IDE_VER
 
 // Antigravity OAuth client credentials (public CLI client — duplicated in usage.js + src/lib/oauth)
 export const ANTIGRAVITY_OAUTH_CLIENT = {
-  clientId: "process.env.ANTIGRAVITY_CLIENT_ID || """,
-  clientSecret: "process.env.ANTIGRAVITY_CLIENT_SECRET || """
+  clientId: process.env.ANTIGRAVITY_CLIENT_ID || "",
+  clientSecret: process.env.ANTIGRAVITY_CLIENT_SECRET || ""
 };
 
 // Gemini (Google) OAuth client credentials (public CLI client — shared by gemini, gemini-cli, src/lib/oauth)
 export const GOOGLE_OAUTH_CLIENT = {
-  clientId: "process.env.GOOGLE_CLIENT_ID || """,
-  clientSecret: "process.env.GOOGLE_CLIENT_SECRET || """
+  clientId: process.env.GOOGLE_CLIENT_ID || "",
+  clientSecret: process.env.GOOGLE_CLIENT_SECRET || ""
 };
