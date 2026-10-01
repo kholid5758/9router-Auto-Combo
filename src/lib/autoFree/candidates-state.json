@@ -1,0 +1,271 @@
+{
+  "updatedAt": "2026-10-01T16:47:26.905Z",
+  "providers": {
+    "kilo": {
+      "prefix": "kc",
+      "ids": [
+        "kc/inclusionai/ling-3.0-flash-sante:free",
+        "kc/stealth/space-bunny-alpha"
+      ]
+    },
+    "openrouter": {
+      "prefix": "openrouter",
+      "ids": [
+        "openrouter/stealth/space-bunny-alpha"
+      ]
+    },
+    "poolside": {
+      "prefix": "poolside",
+      "ids": [
+        "poolside/poolside/laguna-s-2.1"
+      ]
+    },
+    "groq": {
+      "prefix": "groq",
+      "ids": [
+        "groq/qwen/qwen3.8-27b",
+        "groq/allam-2-7b"
+      ]
+    },
+    "nvidia": {
+      "prefix": "nvidia",
+      "ids": [
+        "nvidia/meta/muse-glimmer-30b"
+      ]
+    },
+    "dynamic-f3072079-f822-4ce9-b5dd-b6ffad3c115a": {
+      "prefix": "atr",
+      "ids": [
+        "atr/Atria-Dawn-Preview"
+      ]
+    },
+    "dynamic-b2d16ed0-bbfd-4577-8bb6-2554ba4b837f": {
+      "prefix": "nara",
+      "ids": [
+        "nara/nemotron-3-super-free",
+        "nara/ling-3.0-flash-sante-free",
+        "nara/agnes-2.5-flash",
+        "nara/space-bunny-alpha"
+      ]
+    },
+    "dynamic-1cc8dad9-273e-4346-9a15-231e6555cfb8": {
+      "prefix": "vy",
+      "ids": [
+        "vy/deepseek-v4.1",
+        "vy/deepseek-v4-flash-lr"
+      ]
+    }
+  },
+  "cooldowns": {
+    "gemini/gemini-2.5-flash-lite": {
+      "failCount": 1,
+      "lastFailedAt": "2026-09-17T06:19:03.379Z",
+      "nextRetryAt": "2026-09-17T06:33:43.447Z",
+      "reason": "HTTP 503: [gemini/gemini-2.5-flash-lite] [429]: { \"error\": { \"code\": 429, \""
+    },
+    "gemini/gemini-3.1-pro-preview": {
+      "failCount": 1,
+      "lastFailedAt": "2026-09-17T06:19:05.533Z",
+      "nextRetryAt": "2026-09-17T06:33:43.447Z",
+      "reason": "HTTP 503: [gemini/gemini-3.1-pro-preview] [429]: { \"error\": { \"code\": 429, "
+    },
+    "gemini/gemini-3.1-pro-preview-customtools": {
+      "failCount": 1,
+      "lastFailedAt": "2026-09-17T06:19:06.725Z",
+      "nextRetryAt": "2026-09-17T06:33:43.447Z",
+      "reason": "HTTP 503: [gemini/gemini-3.1-pro-preview-customtools] [429]: { \"error\": { \""
+    },
+    "gemini/gemini-omni-flash-preview": {
+      "failCount": 1,
+      "lastFailedAt": "2026-09-17T06:19:06.766Z",
+      "nextRetryAt": "2026-09-17T06:33:43.447Z",
+      "reason": "HTTP 503: [gemini/gemini-omni-flash-preview] [429]: { \"error\": { \"code\": 42"
+    },
+    "gemini/gemini-omni-1.1-flash": {
+      "failCount": 1,
+      "lastFailedAt": "2026-09-17T06:19:07.919Z",
+      "nextRetryAt": "2026-09-17T06:33:43.447Z",
+      "reason": "HTTP 503: [gemini/gemini-omni-1.1-flash] [429]: { \"error\": { \"code\": 429, \""
+    },
+    "gemini/gemini-pro-latest": {
+      "failCount": 1,
+      "lastFailedAt": "2026-09-17T06:19:09.307Z",
+      "nextRetryAt": "2026-09-17T06:33:43.447Z",
+      "reason": "HTTP 503: [gemini/gemini-pro-latest] [429]: { \"error\": { \"code\": 429, \"mess"
+    },
+    "kc/thinkingmachines/inkling-small:free": {
+      "failCount": 1,
+      "lastFailedAt": "2026-09-17T06:19:11.852Z",
+      "nextRetryAt": "2026-09-17T06:33:43.447Z",
+      "reason": "HTTP 503: [kilocode/thinkingmachines/inkling-small:free] [429]: {\"error\":{\""
+    },
+    "bazaarlink/qwen/qwen3.7-flash:free": {
+      "failCount": 2,
+      "lastFailedAt": "2026-09-22T10:46:11.455Z",
+      "nextRetryAt": "2026-09-22T11:45:16.421Z",
+      "reason": "HTTP 503: [bazaarlink/qwen/qwen3.7-flash:free] [429]: {\"error\":{\"message\":\""
+    },
+    "alims-intl/qwen-flash": {
+      "failCount": 2,
+      "lastFailedAt": "2026-09-22T10:46:15.759Z",
+      "nextRetryAt": "2026-09-22T11:45:16.421Z",
+      "reason": "HTTP 503: [alims-intl/qwen-flash] [403]: {\"error\":{\"message\":\"The free quot"
+    },
+    "alims-intl/qwen-plus-character": {
+      "failCount": 2,
+      "lastFailedAt": "2026-09-22T10:46:16.355Z",
+      "nextRetryAt": "2026-09-22T11:45:16.421Z",
+      "reason": "HTTP 503: [alims-intl/qwen-plus-character] [403]: {\"error\":{\"message\":\"The "
+    },
+    "api-airforce/open-mistral-nemo": {
+      "failCount": 2,
+      "lastFailedAt": "2026-09-22T10:46:14.793Z",
+      "nextRetryAt": "2026-09-22T11:45:16.421Z",
+      "reason": "HTTP 503: [api-airforce/open-mistral-nemo] [429]: {\"error\":{\"message\":\"Glob"
+    },
+    "api-airforce/mistral-large-2512": {
+      "failCount": 2,
+      "lastFailedAt": "2026-09-22T10:46:15.949Z",
+      "nextRetryAt": "2026-09-22T11:45:16.421Z",
+      "reason": "HTTP 503: [api-airforce/mistral-large-2512] [429]: {\"error\":{\"message\":\"Glo"
+    },
+    "api-airforce/ministral-14b-latest": {
+      "failCount": 2,
+      "lastFailedAt": "2026-09-22T10:46:21.587Z",
+      "nextRetryAt": "2026-09-22T11:45:16.421Z",
+      "reason": "HTTP 503: [api-airforce/ministral-14b-latest] [429]: {\"error\":{\"code\":\"rate"
+    },
+    "api-airforce/ministral-14b-2512": {
+      "failCount": 2,
+      "lastFailedAt": "2026-09-22T10:46:17.488Z",
+      "nextRetryAt": "2026-09-22T11:45:16.421Z",
+      "reason": "HTTP 503: [api-airforce/ministral-14b-2512] [429]: {\"error\":{\"message\":\"Glo"
+    },
+    "api-airforce/voxtral-small-latest": {
+      "failCount": 2,
+      "lastFailedAt": "2026-09-22T10:46:18.255Z",
+      "nextRetryAt": "2026-09-22T11:45:16.421Z",
+      "reason": "HTTP 503: [api-airforce/voxtral-small-latest] [429]: {\"error\":{\"message\":\"G"
+    },
+    "api-airforce/voxtral-small-2507": {
+      "failCount": 2,
+      "lastFailedAt": "2026-09-22T10:46:18.404Z",
+      "nextRetryAt": "2026-09-22T11:45:16.421Z",
+      "reason": "HTTP 503: [api-airforce/voxtral-small-2507] [429]: {\"error\":{\"message\":\"Glo"
+    },
+    "api-airforce/suno-v5.5": {
+      "failCount": 2,
+      "lastFailedAt": "2026-09-22T10:46:20.857Z",
+      "nextRetryAt": "2026-09-22T11:45:16.421Z",
+      "reason": "HTTP 503: [api-airforce/suno-v5.5] [429]: {\"error\":{\"code\":\"rate_limit_exce"
+    },
+    "openrouter/nex-agi/nex-n2.5-pro:free": {
+      "failCount": 2,
+      "lastFailedAt": "2026-09-22T10:46:19.857Z",
+      "nextRetryAt": "2026-09-22T11:45:16.421Z",
+      "reason": "HTTP 503: [openrouter/nex-agi/nex-n2.5-pro:free] [429]: {\"error\":{\"message\""
+    },
+    "api-airforce/ministral-8b-latest": {
+      "failCount": 2,
+      "lastFailedAt": "2026-09-22T10:46:19.309Z",
+      "nextRetryAt": "2026-09-22T11:45:16.421Z",
+      "reason": "HTTP 503: [api-airforce/ministral-8b-latest] [429]: {\"error\":{\"code\":\"rate_"
+    },
+    "api-airforce/ministral-8b-2512": {
+      "failCount": 2,
+      "lastFailedAt": "2026-09-22T10:46:20.167Z",
+      "nextRetryAt": "2026-09-22T11:45:16.421Z",
+      "reason": "HTTP 503: [api-airforce/ministral-8b-2512] [429]: {\"error\":{\"message\":\"Glob"
+    },
+    "api-airforce/llama-instant": {
+      "failCount": 2,
+      "lastFailedAt": "2026-09-22T10:46:21.047Z",
+      "nextRetryAt": "2026-09-22T11:45:16.421Z",
+      "reason": "HTTP 503: [api-airforce/llama-instant] [429]: {\"error\":{\"code\":\"rate_limit_"
+    },
+    "api-airforce/glm-4.7-flash": {
+      "failCount": 2,
+      "lastFailedAt": "2026-09-22T10:46:15.607Z",
+      "nextRetryAt": "2026-09-22T11:45:16.421Z",
+      "reason": "HTTP 503: [api-airforce/glm-4.7-flash] [429]: {\"error\":{\"message\":\"Global r"
+    },
+    "api-airforce/mistral-code-fim-latest": {
+      "failCount": 2,
+      "lastFailedAt": "2026-09-22T10:46:16.042Z",
+      "nextRetryAt": "2026-09-22T11:45:16.421Z",
+      "reason": "HTTP 503: [api-airforce/mistral-code-fim-latest] [429]: {\"error\":{\"message\""
+    },
+    "api-airforce/suno-v4.5": {
+      "failCount": 2,
+      "lastFailedAt": "2026-09-22T10:46:18.697Z",
+      "nextRetryAt": "2026-09-22T11:45:16.421Z",
+      "reason": "HTTP 503: [api-airforce/suno-v4.5] [429]: {\"error\":{\"message\":\"Global rate "
+    },
+    "bazaarlink/deepseek/deepseek-v4-flash-0731free:free": {
+      "failCount": 1,
+      "lastFailedAt": "2026-09-22T10:45:26.166Z",
+      "nextRetryAt": "2026-09-22T11:00:16.421Z",
+      "reason": "HTTP 503: [bazaarlink/deepseek/deepseek-v4-flash-0731free:free] [429]: {\"er"
+    },
+    "openrouter/stealth/union-alpha": {
+      "failCount": 1,
+      "lastFailedAt": "2026-09-22T10:46:19.963Z",
+      "nextRetryAt": "2026-09-22T11:00:16.421Z",
+      "reason": "HTTP 503: [openrouter/stealth/union-alpha] [429]: {\"error\":{\"message\":\"Rate"
+    },
+    "openrouter/z-ai/glm-5.2:free": {
+      "failCount": 1,
+      "lastFailedAt": "2026-09-22T10:46:20.590Z",
+      "nextRetryAt": "2026-09-22T11:00:16.421Z",
+      "reason": "HTTP 503: [openrouter/z-ai/glm-5.2:free] [429]: {\"error\":{\"message\":\"Rate l"
+    },
+    "openrouter/nvidia/nemotron-3-ultra-550b-a55b:free": {
+      "failCount": 1,
+      "lastFailedAt": "2026-09-22T10:46:21.116Z",
+      "nextRetryAt": "2026-09-22T11:00:16.421Z",
+      "reason": "HTTP 503: [openrouter/nvidia/nemotron-3-ultra-550b-a55b:free] [429]: {\"erro"
+    },
+    "openrouter/nvidia/nemotron-3.5-lightning:free": {
+      "failCount": 1,
+      "lastFailedAt": "2026-09-22T10:46:21.227Z",
+      "nextRetryAt": "2026-09-22T11:00:16.421Z",
+      "reason": "HTTP 503: [openrouter/nvidia/nemotron-3.5-lightning:free] [429]: {\"error\":{"
+    },
+    "openrouter/poolside/laguna-s-2.1:free": {
+      "failCount": 1,
+      "lastFailedAt": "2026-09-22T10:46:21.431Z",
+      "nextRetryAt": "2026-09-22T11:00:16.421Z",
+      "reason": "HTTP 503: [openrouter/poolside/laguna-s-2.1:free] [429]: {\"error\":{\"message"
+    },
+    "openrouter/inclusionai/ling-3.0-flash-vl:free": {
+      "failCount": 1,
+      "lastFailedAt": "2026-09-22T10:46:21.859Z",
+      "nextRetryAt": "2026-09-22T11:00:16.421Z",
+      "reason": "HTTP 503: [openrouter/inclusionai/ling-3.0-flash-vl:free] [429]: {\"error\":{"
+    },
+    "openrouter/inclusionai/ling-3.0-flash-sante:free": {
+      "failCount": 1,
+      "lastFailedAt": "2026-09-22T10:46:22.128Z",
+      "nextRetryAt": "2026-09-22T11:00:16.421Z",
+      "reason": "HTTP 503: [openrouter/inclusionai/ling-3.0-flash-sante:free] [429]: {\"error"
+    },
+    "openrouter/inclusionai/ling-3.0-flash-fin:free": {
+      "failCount": 1,
+      "lastFailedAt": "2026-09-22T10:46:22.306Z",
+      "nextRetryAt": "2026-09-22T11:00:16.421Z",
+      "reason": "HTTP 503: [openrouter/inclusionai/ling-3.0-flash-fin:free] [429]: {\"error\":"
+    },
+    "openrouter/nex-agi/nex-n2.5-mini:free": {
+      "failCount": 1,
+      "lastFailedAt": "2026-09-22T10:46:22.392Z",
+      "nextRetryAt": "2026-09-22T11:00:16.421Z",
+      "reason": "HTTP 503: [openrouter/nex-agi/nex-n2.5-mini:free] [429]: {\"error\":{\"message"
+    },
+    "api-airforce/codestral-2508": {
+      "failCount": 1,
+      "lastFailedAt": "2026-09-22T10:46:23.899Z",
+      "nextRetryAt": "2026-09-22T11:00:16.421Z",
+      "reason": "HTTP 503: [api-airforce/codestral-2508] [429]: {\"error\":{\"code\":\"rate_limit"
+    }
+  }
+}

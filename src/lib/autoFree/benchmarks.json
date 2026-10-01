@@ -1,0 +1,2619 @@
+{
+  "gemini-3.1-pro-preview": {
+    "name": "Gemini 3.1 Pro Preview",
+    "score": 85,
+    "swe_bench": 81,
+    "livecodebench": 84.5,
+    "tier": "S"
+  },
+  "assistant-sonnet-4.5-thinking": {
+    "name": "Claude Sonnet 4.5 Thinking",
+    "score": 84,
+    "swe_bench": 80,
+    "livecodebench": 83.5,
+    "tier": "S"
+  },
+  "gemini-3.7-flash": {
+    "name": "Gemini 3.7 Flash",
+    "score": 83,
+    "swe_bench": 78.5,
+    "livecodebench": 82,
+    "tier": "S"
+  },
+  "claude-sonnet-4.5": {
+    "name": "Claude Sonnet 4.5",
+    "score": 82.5,
+    "swe_bench": 78,
+    "livecodebench": 81,
+    "tier": "S"
+  },
+  "gemini-3.6-flash": {
+    "name": "Gemini 3.6 Flash",
+    "score": 81,
+    "swe_bench": 76,
+    "livecodebench": 80,
+    "tier": "S"
+  },
+  "gemini-3.5-flash": {
+    "name": "Gemini 3.5 Flash",
+    "score": 79,
+    "swe_bench": 74,
+    "livecodebench": 78,
+    "tier": "A+"
+  },
+  "claude-3.5-sonnet": {
+    "name": "Claude 3.5 Sonnet",
+    "score": 79,
+    "swe_bench": 74,
+    "livecodebench": 78,
+    "tier": "A+"
+  },
+  "deepseek-r1": {
+    "name": "DeepSeek R1",
+    "score": 76.5,
+    "swe_bench": 71,
+    "livecodebench": 75.8,
+    "tier": "A+"
+  },
+  "gemini-3.5-flash-lite": {
+    "name": "Gemini 3.5 Flash Lite",
+    "score": 76,
+    "swe_bench": 70,
+    "livecodebench": 75,
+    "tier": "A+"
+  },
+  "gemini-3.1-flash-lite": {
+    "name": "Gemini 3.1 Flash Lite",
+    "score": 74,
+    "swe_bench": 68,
+    "livecodebench": 73,
+    "tier": "A+"
+  },
+  "deepseek-v4": {
+    "name": "DeepSeek V4 Flash",
+    "score": 74,
+    "swe_bench": 68,
+    "livecodebench": 73,
+    "tier": "A+"
+  },
+  "deepseek-v3": {
+    "name": "DeepSeek V3",
+    "score": 72,
+    "swe_bench": 65,
+    "livecodebench": 70.5,
+    "tier": "A+"
+  },
+  "glm-5": {
+    "name": "Zhipu GLM 5",
+    "score": 71,
+    "swe_bench": 65,
+    "livecodebench": 71.5,
+    "tier": "A+"
+  },
+  "step-3.7-flash": {
+    "name": "StepFun Step 3.7 Flash",
+    "score": 70,
+    "swe_bench": 64.5,
+    "livecodebench": 70.2,
+    "tier": "A+"
+  },
+  "qwen3.7-flash": {
+    "name": "Qwen 3.7 Flash",
+    "score": 70,
+    "swe_bench": 64.5,
+    "livecodebench": 69.5,
+    "tier": "A+"
+  },
+  "qwen3.6-plus": {
+    "name": "Qwen 3.6 Plus",
+    "score": 69,
+    "swe_bench": 64,
+    "livecodebench": 68,
+    "tier": "A"
+  },
+  "qwen2.5-coder": {
+    "name": "Qwen 2.5 Coder 32B",
+    "score": 68.5,
+    "swe_bench": 63,
+    "livecodebench": 67.5,
+    "tier": "A"
+  },
+  "gpt-4o": {
+    "name": "GPT-4o",
+    "score": 66,
+    "swe_bench": 60,
+    "livecodebench": 65,
+    "tier": "A"
+  },
+  "gemini-2.0-flash": {
+    "name": "Gemini 2.0 Flash",
+    "score": 65,
+    "swe_bench": 58.5,
+    "livecodebench": 64,
+    "tier": "A"
+  },
+  "minimax-m3": {
+    "name": "MiniMax M3",
+    "score": 62.5,
+    "swe_bench": 55,
+    "livecodebench": 61,
+    "tier": "A"
+  },
+  "minimax-m2.5": {
+    "name": "MiniMax M2.5",
+    "score": 61,
+    "swe_bench": 53,
+    "livecodebench": 59.5,
+    "tier": "A"
+  },
+  "nemotron-3-ultra": {
+    "name": "NVIDIA Nemotron 3 Ultra",
+    "score": 58.5,
+    "swe_bench": 50,
+    "livecodebench": 57,
+    "tier": "B+"
+  },
+  "nemotron-3.5-lightning": {
+    "name": "NVIDIA Nemotron 3.5 Lightning",
+    "score": 57,
+    "swe_bench": 49,
+    "livecodebench": 56,
+    "tier": "B+"
+  },
+  "nemotron-3-super": {
+    "name": "NVIDIA Nemotron 3 Super",
+    "score": 56,
+    "swe_bench": 48,
+    "livecodebench": 55,
+    "tier": "B+"
+  },
+  "hy3": {
+    "name": "Tencent HY3",
+    "score": 54,
+    "swe_bench": 46,
+    "livecodebench": 52.5,
+    "tier": "B+"
+  },
+  "mimo-v2.5": {
+    "name": "Xiaomi MiMo V2.5",
+    "score": 52,
+    "swe_bench": 44,
+    "livecodebench": 50.5,
+    "tier": "B+"
+  },
+  "nemotron-3-nano": {
+    "name": "NVIDIA Nemotron 3 Nano",
+    "score": 50,
+    "swe_bench": 42,
+    "livecodebench": 49,
+    "tier": "B+"
+  },
+  "laguna-s-2.1": {
+    "name": "Poolside Laguna S 2.1",
+    "score": 48,
+    "swe_bench": 40,
+    "livecodebench": 46,
+    "tier": "B"
+  },
+  "ling-3.0-flash": {
+    "name": "Ling 3.0 Flash",
+    "score": 47,
+    "swe_bench": 39,
+    "livecodebench": 45,
+    "tier": "B"
+  },
+  "laguna-xs-2.1": {
+    "name": "Poolside Laguna XS 2.1",
+    "score": 46,
+    "swe_bench": 38,
+    "livecodebench": 44,
+    "tier": "B"
+  },
+  "gpt-oss-20b": {
+    "name": "OpenAI GPT OSS 20B",
+    "score": 45,
+    "swe_bench": 36,
+    "livecodebench": 43,
+    "tier": "B"
+  },
+  "lfm-2.5-2.6b": {
+    "name": "LiquidAI LFM 2.5 2.6B",
+    "score": 44,
+    "swe_bench": 35,
+    "livecodebench": 42,
+    "tier": "C+"
+  },
+  "north-mini-code": {
+    "name": "Cohere North Mini Code",
+    "score": 43,
+    "swe_bench": 34,
+    "livecodebench": 41,
+    "tier": "C+"
+  },
+  "opencoder-8b-instruct": {
+    "name": "OpenCoder-8B-Instruct",
+    "score": 75,
+    "humaneval_plus": 77.4,
+    "mbpp_plus": 71.4,
+    "tier": "A+",
+    "source": "evalplus"
+  },
+  "artigenz-coder-ds-6.7b": {
+    "name": "Artigenz-Coder-DS-6.7B",
+    "score": 71.4,
+    "humaneval_plus": 72.6,
+    "mbpp_plus": 69.6,
+    "tier": "A+",
+    "source": "evalplus"
+  },
+  "code-13b": {
+    "name": "Code-13B",
+    "score": 31.4,
+    "humaneval_plus": 52.4,
+    "mbpp_plus": 0,
+    "tier": "C+",
+    "source": "evalplus"
+  },
+  "code-290k-6.7b-instruct": {
+    "name": "Code-290k-6.7B-Instruct",
+    "score": 35.8,
+    "humaneval_plus": 59.7,
+    "mbpp_plus": 0,
+    "tier": "C+",
+    "source": "evalplus"
+  },
+  "code-33b": {
+    "name": "Code-33B",
+    "score": 29.6,
+    "humaneval_plus": 49.4,
+    "mbpp_plus": 0,
+    "tier": "C+",
+    "source": "evalplus"
+  },
+  "codegen-16b": {
+    "name": "CodeGen-16B",
+    "score": 35,
+    "humaneval_plus": 28,
+    "mbpp_plus": 45.5,
+    "tier": "C+",
+    "source": "evalplus"
+  },
+  "codegen-2b": {
+    "name": "CodeGen-2B",
+    "score": 28,
+    "humaneval_plus": 22.6,
+    "mbpp_plus": 36,
+    "tier": "C+",
+    "source": "evalplus"
+  },
+  "codegen-6b": {
+    "name": "CodeGen-6B",
+    "score": 32.5,
+    "humaneval_plus": 25.6,
+    "mbpp_plus": 42.9,
+    "tier": "C+",
+    "source": "evalplus"
+  },
+  "codegen2-16b": {
+    "name": "CodeGen2-16B",
+    "score": 9.9,
+    "humaneval_plus": 16.5,
+    "mbpp_plus": 0,
+    "tier": "C+",
+    "source": "evalplus"
+  },
+  "codegen2-1b": {
+    "name": "CodeGen2-1B",
+    "score": 5.5,
+    "humaneval_plus": 9.1,
+    "mbpp_plus": 0,
+    "tier": "C+",
+    "source": "evalplus"
+  },
+  "codegen2-3b": {
+    "name": "CodeGen2-3B",
+    "score": 7.7,
+    "humaneval_plus": 12.8,
+    "mbpp_plus": 0,
+    "tier": "C+",
+    "source": "evalplus"
+  },
+  "codegen2-7b": {
+    "name": "CodeGen2-7B",
+    "score": 10.6,
+    "humaneval_plus": 17.7,
+    "mbpp_plus": 0,
+    "tier": "C+",
+    "source": "evalplus"
+  },
+  "codellama-13b": {
+    "name": "CodeLlama-13B",
+    "score": 44.1,
+    "humaneval_plus": 38.4,
+    "mbpp_plus": 52.6,
+    "tier": "C+",
+    "source": "evalplus"
+  },
+  "codellama-34b": {
+    "name": "CodeLlama-34B",
+    "score": 48.9,
+    "humaneval_plus": 43.9,
+    "mbpp_plus": 56.3,
+    "tier": "B",
+    "source": "evalplus"
+  },
+  "codellama-70b": {
+    "name": "CodeLlama-70B",
+    "score": 30.4,
+    "humaneval_plus": 50.6,
+    "mbpp_plus": 0,
+    "tier": "C+",
+    "source": "evalplus"
+  },
+  "codellama-70b-instruct": {
+    "name": "CodeLlama-70B-Instruct",
+    "score": 39.5,
+    "humaneval_plus": 65.9,
+    "mbpp_plus": 0,
+    "tier": "C+",
+    "source": "evalplus"
+  },
+  "codellama-7b": {
+    "name": "CodeLlama-7B",
+    "score": 40,
+    "humaneval_plus": 35.4,
+    "mbpp_plus": 46.8,
+    "tier": "C+",
+    "source": "evalplus"
+  },
+  "qwen2.5-coder-32b-instruct": {
+    "name": "Qwen2.5-Coder-32B-Instruct",
+    "score": 83.1,
+    "humaneval_plus": 87.2,
+    "mbpp_plus": 77,
+    "tier": "S",
+    "source": "evalplus"
+  },
+  "codeqwen1.5-7b": {
+    "name": "CodeQwen1.5-7B",
+    "score": 51.7,
+    "humaneval_plus": 45.7,
+    "mbpp_plus": 60.8,
+    "tier": "B+",
+    "source": "evalplus"
+  },
+  "codeqwen1.5-7b-chat": {
+    "name": "CodeQwen1.5-7B-Chat",
+    "score": 74.8,
+    "humaneval_plus": 78.7,
+    "mbpp_plus": 69,
+    "tier": "A+",
+    "source": "evalplus"
+  },
+  "qwen1.5-72b-chat": {
+    "name": "Qwen1.5-72B-Chat",
+    "score": 60.1,
+    "humaneval_plus": 59.1,
+    "mbpp_plus": 61.6,
+    "tier": "A",
+    "source": "evalplus"
+  },
+  "codet5--16b": {
+    "name": "CodeT5+-16B",
+    "score": 34.9,
+    "humaneval_plus": 26.8,
+    "mbpp_plus": 47.1,
+    "tier": "C+",
+    "source": "evalplus"
+  },
+  "codet5--2b": {
+    "name": "CodeT5+-2B",
+    "score": 28.4,
+    "humaneval_plus": 22,
+    "mbpp_plus": 38.1,
+    "tier": "C+",
+    "source": "evalplus"
+  },
+  "codet5--6b": {
+    "name": "CodeT5+-6B",
+    "score": 31.2,
+    "humaneval_plus": 24.4,
+    "mbpp_plus": 41.5,
+    "tier": "C+",
+    "source": "evalplus"
+  },
+  "command-r": {
+    "name": "Command-R+",
+    "score": 59.4,
+    "humaneval_plus": 56.7,
+    "mbpp_plus": 63.5,
+    "tier": "B+",
+    "source": "evalplus"
+  },
+  "deepseek-v3-nov-2024": {
+    "name": "DeepSeek-V3 (Nov 2024)",
+    "score": 81.2,
+    "humaneval_plus": 86.6,
+    "mbpp_plus": 73,
+    "tier": "S",
+    "source": "evalplus"
+  },
+  "deepseek-v2.5-nov-2024": {
+    "name": "DeepSeek-V2.5 (Nov 2024)",
+    "score": 79.7,
+    "humaneval_plus": 83.5,
+    "mbpp_plus": 74.1,
+    "tier": "A+",
+    "source": "evalplus"
+  },
+  "gemini-1.5-pro-002": {
+    "name": "Gemini 1.5 Pro 002",
+    "score": 77.4,
+    "humaneval_plus": 79.3,
+    "mbpp_plus": 74.6,
+    "tier": "A+",
+    "source": "evalplus"
+  },
+  "gemini-1.5-flash-002": {
+    "name": "Gemini 1.5 Flash 002",
+    "score": 72.4,
+    "humaneval_plus": 75.6,
+    "mbpp_plus": 67.5,
+    "tier": "A+",
+    "source": "evalplus"
+  },
+  "deepseek-coder-v2-instruct": {
+    "name": "DeepSeek-Coder-V2-Instruct",
+    "score": 79.4,
+    "humaneval_plus": 82.3,
+    "mbpp_plus": 75.1,
+    "tier": "A+",
+    "source": "evalplus"
+  },
+  "deepseek-coder-1.3b-base": {
+    "name": "DeepSeek-Coder-1.3B-base",
+    "score": 34.5,
+    "humaneval_plus": 25.6,
+    "mbpp_plus": 47.9,
+    "tier": "C+",
+    "source": "evalplus"
+  },
+  "deepseek-coder-1.3b-instruct": {
+    "name": "DeepSeek-Coder-1.3B-instruct",
+    "score": 58.2,
+    "humaneval_plus": 60.4,
+    "mbpp_plus": 54.8,
+    "tier": "B+",
+    "source": "evalplus"
+  },
+  "deepseek-coder-33b-base": {
+    "name": "DeepSeek-Coder-33B-base",
+    "score": 26.7,
+    "humaneval_plus": 44.5,
+    "mbpp_plus": 0,
+    "tier": "C+",
+    "source": "evalplus"
+  },
+  "deepseek-coder-33b-instruct": {
+    "name": "DeepSeek-Coder-33B-instruct",
+    "score": 73,
+    "humaneval_plus": 75,
+    "mbpp_plus": 70.1,
+    "tier": "A+",
+    "source": "evalplus"
+  },
+  "deepseek-coder-6.7b-base": {
+    "name": "DeepSeek-Coder-6.7B-base",
+    "score": 47.2,
+    "humaneval_plus": 39.6,
+    "mbpp_plus": 58.7,
+    "tier": "B",
+    "source": "evalplus"
+  },
+  "deepseek-coder-6.7b-instruct": {
+    "name": "DeepSeek-Coder-6.7B-instruct",
+    "score": 69,
+    "humaneval_plus": 71.3,
+    "mbpp_plus": 65.6,
+    "tier": "A",
+    "source": "evalplus"
+  },
+  "deepseek-coder-7b-instruct-v1.5": {
+    "name": "DeepSeek-Coder-7B-instruct-v1.5",
+    "score": 67.7,
+    "humaneval_plus": 71.3,
+    "mbpp_plus": 62.2,
+    "tier": "A",
+    "source": "evalplus"
+  },
+  "claude-sonnet-3.5-june-2024": {
+    "name": "Claude Sonnet 3.5 (June 2024)",
+    "score": 78.7,
+    "humaneval_plus": 81.7,
+    "mbpp_plus": 74.3,
+    "tier": "A+",
+    "source": "evalplus"
+  },
+  "grok-beta": {
+    "name": "Grok Beta",
+    "score": 74.5,
+    "humaneval_plus": 80.5,
+    "mbpp_plus": 65.6,
+    "tier": "A+",
+    "source": "evalplus"
+  },
+  "o1-preview-sept-2024": {
+    "name": "O1 Preview (Sept 2024)",
+    "score": 85.5,
+    "humaneval_plus": 89,
+    "mbpp_plus": 80.2,
+    "tier": "S",
+    "source": "evalplus"
+  },
+  "o1-mini-sept-2024": {
+    "name": "O1 Mini (Sept 2024)",
+    "score": 84.9,
+    "humaneval_plus": 89,
+    "mbpp_plus": 78.8,
+    "tier": "S",
+    "source": "evalplus"
+  },
+  "gpt-4o-aug-2024": {
+    "name": "GPT 4o (Aug 2024)",
+    "score": 81.2,
+    "humaneval_plus": 87.2,
+    "mbpp_plus": 72.2,
+    "tier": "S",
+    "source": "evalplus"
+  },
+  "gpt-4o-mini-july-2024": {
+    "name": "GPT 4o Mini (July 2024)",
+    "score": 79,
+    "humaneval_plus": 83.5,
+    "mbpp_plus": 72.2,
+    "tier": "A+",
+    "source": "evalplus"
+  },
+  "gpt-3.5-may-2023": {
+    "name": "GPT-3.5 (May 2023)",
+    "score": 39.9,
+    "humaneval_plus": 66.5,
+    "mbpp_plus": 0,
+    "tier": "C+",
+    "source": "evalplus"
+  },
+  "gpt-3.5-turbo-nov-2023": {
+    "name": "GPT-3.5-Turbo (Nov 2023)",
+    "score": 70.3,
+    "humaneval_plus": 70.7,
+    "mbpp_plus": 69.7,
+    "tier": "A+",
+    "source": "evalplus"
+  },
+  "gpt-4-may-2023": {
+    "name": "GPT-4 (May 2023)",
+    "score": 47.6,
+    "humaneval_plus": 79.3,
+    "mbpp_plus": 0,
+    "tier": "B",
+    "source": "evalplus"
+  },
+  "gpt-4-turbo-april-2024": {
+    "name": "GPT-4-Turbo (April 2024)",
+    "score": 52,
+    "humaneval_plus": 86.6,
+    "mbpp_plus": 0,
+    "tier": "B+",
+    "source": "evalplus"
+  },
+  "gpt-4-turbo-nov-2023": {
+    "name": "GPT-4-Turbo (Nov 2023)",
+    "score": 78.3,
+    "humaneval_plus": 81.7,
+    "mbpp_plus": 73.3,
+    "tier": "A+",
+    "source": "evalplus"
+  },
+  "gpt-j-6b": {
+    "name": "GPT-J-6B",
+    "score": 6.6,
+    "humaneval_plus": 11,
+    "mbpp_plus": 0,
+    "tier": "C+",
+    "source": "evalplus"
+  },
+  "gpt-neo-2.7b": {
+    "name": "GPT-Neo-2.7B",
+    "score": 4,
+    "humaneval_plus": 6.7,
+    "mbpp_plus": 0,
+    "tier": "C+",
+    "source": "evalplus"
+  },
+  "gemini-pro-1.0": {
+    "name": "Gemini Pro 1.0",
+    "score": 57.9,
+    "humaneval_plus": 55.5,
+    "mbpp_plus": 61.4,
+    "tier": "B+",
+    "source": "evalplus"
+  },
+  "gemini-pro-1.5": {
+    "name": "Gemini Pro 1.5",
+    "score": 36.6,
+    "humaneval_plus": 61,
+    "mbpp_plus": 0,
+    "tier": "C+",
+    "source": "evalplus"
+  },
+  "incoder-1.3b": {
+    "name": "InCoder-1.3B",
+    "score": 6.6,
+    "humaneval_plus": 11,
+    "mbpp_plus": 0,
+    "tier": "C+",
+    "source": "evalplus"
+  },
+  "incoder-6.7b": {
+    "name": "InCoder-6.7B",
+    "score": 7.3,
+    "humaneval_plus": 12.2,
+    "mbpp_plus": 0,
+    "tier": "C+",
+    "source": "evalplus"
+  },
+  "llama3-70b-instruct": {
+    "name": "Llama3-70B-instruct",
+    "score": 70.8,
+    "humaneval_plus": 72,
+    "mbpp_plus": 69,
+    "tier": "A+",
+    "source": "evalplus"
+  },
+  "llama3-8b-base": {
+    "name": "Llama3-8B-base",
+    "score": 38.2,
+    "humaneval_plus": 29.3,
+    "mbpp_plus": 51.6,
+    "tier": "C+",
+    "source": "evalplus"
+  },
+  "llama3.1-8b-instruct": {
+    "name": "Llama3.1-8B-instruct",
+    "score": 59.9,
+    "humaneval_plus": 62.8,
+    "mbpp_plus": 55.6,
+    "tier": "B+",
+    "source": "evalplus"
+  },
+  "llama3-8b-instruct": {
+    "name": "Llama3-8B-instruct",
+    "score": 55.9,
+    "humaneval_plus": 56.7,
+    "mbpp_plus": 54.8,
+    "tier": "B+",
+    "source": "evalplus"
+  },
+  "wavecoder-ultra-6.7b": {
+    "name": "WaveCoder-Ultra-6.7B",
+    "score": 67.1,
+    "humaneval_plus": 69.5,
+    "mbpp_plus": 63.5,
+    "tier": "A",
+    "source": "evalplus"
+  },
+  "magicoder-s-cl-7b": {
+    "name": "Magicoder-S-CL-7B",
+    "score": 64.7,
+    "humaneval_plus": 67.7,
+    "mbpp_plus": 60.1,
+    "tier": "A",
+    "source": "evalplus"
+  },
+  "magicoder-s-ds-6.7b": {
+    "name": "Magicoder-S-DS-6.7B",
+    "score": 70.4,
+    "humaneval_plus": 71.3,
+    "mbpp_plus": 69,
+    "tier": "A+",
+    "source": "evalplus"
+  },
+  "mistral-large-mar-2024": {
+    "name": "Mistral Large (Mar 2024)",
+    "score": 61.1,
+    "humaneval_plus": 62.2,
+    "mbpp_plus": 59.5,
+    "tier": "A",
+    "source": "evalplus"
+  },
+  "mistral-7b": {
+    "name": "Mistral-7B",
+    "score": 31.1,
+    "humaneval_plus": 23.8,
+    "mbpp_plus": 42.1,
+    "tier": "C+",
+    "source": "evalplus"
+  },
+  "mistral-codealpaca-7b": {
+    "name": "Mistral-codealpaca-7B",
+    "score": 25.3,
+    "humaneval_plus": 42.1,
+    "mbpp_plus": 0,
+    "tier": "C+",
+    "source": "evalplus"
+  },
+  "mistralhermes-codepro-7b-v1": {
+    "name": "MistralHermes-CodePro-7B-v1",
+    "score": 43.8,
+    "humaneval_plus": 42.1,
+    "mbpp_plus": 46.4,
+    "tier": "C+",
+    "source": "evalplus"
+  },
+  "databricks-dbrx-instruct": {
+    "name": "databricks/dbrx-instruct",
+    "score": 64.4,
+    "humaneval_plus": 70.1,
+    "mbpp_plus": 55.8,
+    "tier": "A",
+    "source": "evalplus"
+  },
+  "codestral-22b-v0.1": {
+    "name": "Codestral-22B-v0.1",
+    "score": 69,
+    "humaneval_plus": 73.8,
+    "mbpp_plus": 61.9,
+    "tier": "A",
+    "source": "evalplus"
+  },
+  "mistral-7b-instruct-v0.2": {
+    "name": "Mistral-7B-Instruct-v0.2",
+    "score": 36.4,
+    "humaneval_plus": 36,
+    "mbpp_plus": 37,
+    "tier": "C+",
+    "source": "evalplus"
+  },
+  "mixtral-8x22b-instruct-v0.1": {
+    "name": "Mixtral-8x22B-Instruct-v0.1",
+    "score": 68.9,
+    "humaneval_plus": 72,
+    "mbpp_plus": 64.3,
+    "tier": "A",
+    "source": "evalplus"
+  },
+  "mixtral-8x7b-instruct-v0.1": {
+    "name": "Mixtral-8x7B-Instruct-v0.1",
+    "score": 43.6,
+    "humaneval_plus": 39.6,
+    "mbpp_plus": 49.7,
+    "tier": "C+",
+    "source": "evalplus"
+  },
+  "openchat-3.5-7b-0106": {
+    "name": "OpenChat-3.5-7B-0106",
+    "score": 62.4,
+    "humaneval_plus": 67.7,
+    "mbpp_plus": 54.5,
+    "tier": "A",
+    "source": "evalplus"
+  },
+  "opencodeinterpreter-ds-33b": {
+    "name": "OpenCodeInterpreter-DS-33B",
+    "score": 71.7,
+    "humaneval_plus": 73.8,
+    "mbpp_plus": 68.5,
+    "tier": "A+",
+    "source": "evalplus"
+  },
+  "opencodeinterpreter-ds-6.7b": {
+    "name": "OpenCodeInterpreter-DS-6.7B",
+    "score": 69.8,
+    "humaneval_plus": 72,
+    "mbpp_plus": 66.4,
+    "tier": "A",
+    "source": "evalplus"
+  },
+  "openhermes-2.5-code-290k-13b": {
+    "name": "OpenHermes-2.5-Code-290k-13B",
+    "score": 47.6,
+    "humaneval_plus": 48.8,
+    "mbpp_plus": 45.8,
+    "tier": "B",
+    "source": "evalplus"
+  },
+  "phind-codellama-34b-v2": {
+    "name": "Phind-CodeLlama-34B-v2",
+    "score": 40.3,
+    "humaneval_plus": 67.1,
+    "mbpp_plus": 0,
+    "tier": "C+",
+    "source": "evalplus"
+  },
+  "polycoder-2.7b": {
+    "name": "PolyCoder-2.7B",
+    "score": 3.7,
+    "humaneval_plus": 6.1,
+    "mbpp_plus": 0,
+    "tier": "C+",
+    "source": "evalplus"
+  },
+  "python-code-13b": {
+    "name": "Python-Code-13B",
+    "score": 18.3,
+    "humaneval_plus": 30.5,
+    "mbpp_plus": 0,
+    "tier": "C+",
+    "source": "evalplus"
+  },
+  "solar-10.7b-instruct-v1.0": {
+    "name": "SOLAR-10.7B-Instruct-v1.0",
+    "score": 36.8,
+    "humaneval_plus": 37.2,
+    "mbpp_plus": 36.2,
+    "tier": "C+",
+    "source": "evalplus"
+  },
+  "santacoder-1.1b": {
+    "name": "SantaCoder-1.1B",
+    "score": 8.4,
+    "humaneval_plus": 14,
+    "mbpp_plus": 0,
+    "tier": "C+",
+    "source": "evalplus"
+  },
+  "stablelm-7b": {
+    "name": "StableLM-7B",
+    "score": 1.4,
+    "humaneval_plus": 2.4,
+    "mbpp_plus": 0,
+    "tier": "C+",
+    "source": "evalplus"
+  },
+  "starchat2-15b-v0.1": {
+    "name": "starchat2-15b-v0.1",
+    "score": 68.6,
+    "humaneval_plus": 71.3,
+    "mbpp_plus": 64.6,
+    "tier": "A",
+    "source": "evalplus"
+  },
+  "starcoder-15b": {
+    "name": "StarCoder-15B",
+    "score": 36,
+    "humaneval_plus": 29.3,
+    "mbpp_plus": 46.1,
+    "tier": "C+",
+    "source": "evalplus"
+  },
+  "starcoder2-15b-instruct-v0.1": {
+    "name": "starcoder2-15b-instruct-v0.1",
+    "score": 62.3,
+    "humaneval_plus": 60.4,
+    "mbpp_plus": 65.1,
+    "tier": "A",
+    "source": "evalplus"
+  },
+  "starcoder2-15b": {
+    "name": "StarCoder2-15B",
+    "score": 22.7,
+    "humaneval_plus": 37.8,
+    "mbpp_plus": 0,
+    "tier": "C+",
+    "source": "evalplus"
+  },
+  "starcoder2-3b": {
+    "name": "StarCoder2-3B",
+    "score": 16.4,
+    "humaneval_plus": 27.4,
+    "mbpp_plus": 0,
+    "tier": "C+",
+    "source": "evalplus"
+  },
+  "starcoder2-7b": {
+    "name": "StarCoder2-7B",
+    "score": 17.9,
+    "humaneval_plus": 29.9,
+    "mbpp_plus": 0,
+    "tier": "C+",
+    "source": "evalplus"
+  },
+  "starcoderbase-1b": {
+    "name": "StarCoderBase-1B",
+    "score": 7.3,
+    "humaneval_plus": 12.2,
+    "mbpp_plus": 0,
+    "tier": "C+",
+    "source": "evalplus"
+  },
+  "starcoderbase-3b": {
+    "name": "StarCoderBase-3B",
+    "score": 9.5,
+    "humaneval_plus": 15.9,
+    "mbpp_plus": 0,
+    "tier": "C+",
+    "source": "evalplus"
+  },
+  "starcoderbase-7b": {
+    "name": "StarCoderBase-7B",
+    "score": 12.8,
+    "humaneval_plus": 21.3,
+    "mbpp_plus": 0,
+    "tier": "C+",
+    "source": "evalplus"
+  },
+  "vicuna-13b": {
+    "name": "Vicuna-13B",
+    "score": 9.5,
+    "humaneval_plus": 15.9,
+    "mbpp_plus": 0,
+    "tier": "C+",
+    "source": "evalplus"
+  },
+  "vicuna-7b": {
+    "name": "Vicuna-7B",
+    "score": 7,
+    "humaneval_plus": 11.6,
+    "mbpp_plus": 0,
+    "tier": "C+",
+    "source": "evalplus"
+  },
+  "whiterabbitneo-33b-v1": {
+    "name": "WhiteRabbitNeo-33B-v1",
+    "score": 66.3,
+    "humaneval_plus": 65.9,
+    "mbpp_plus": 66.9,
+    "tier": "A",
+    "source": "evalplus"
+  },
+  "wizardcoder-15b-v1.0": {
+    "name": "WizardCoder-15B-V1.0",
+    "score": 52,
+    "humaneval_plus": 50.6,
+    "mbpp_plus": 54.2,
+    "tier": "B+",
+    "source": "evalplus"
+  },
+  "wizardcoder-33b-v1.1": {
+    "name": "WizardCoder-33B-V1.1",
+    "score": 43.9,
+    "humaneval_plus": 73.2,
+    "mbpp_plus": 0,
+    "tier": "C+",
+    "source": "evalplus"
+  },
+  "wizardcoder-python-34b-v1.0": {
+    "name": "WizardCoder-Python-34B-V1.0",
+    "score": 64,
+    "humaneval_plus": 64.6,
+    "mbpp_plus": 63.2,
+    "tier": "A",
+    "source": "evalplus"
+  },
+  "wizardcoder-python-7b-v1.0": {
+    "name": "WizardCoder-Python-7B-V1.0",
+    "score": 46.9,
+    "humaneval_plus": 45.1,
+    "mbpp_plus": 49.5,
+    "tier": "B",
+    "source": "evalplus"
+  },
+  "xwincoder-34b": {
+    "name": "XwinCoder-34B",
+    "score": 67.6,
+    "humaneval_plus": 69.5,
+    "mbpp_plus": 64.8,
+    "tier": "A",
+    "source": "evalplus"
+  },
+  "zephyr--7b": {
+    "name": "Zephyr β-7B",
+    "score": 27.8,
+    "humaneval_plus": 23.2,
+    "mbpp_plus": 34.7,
+    "tier": "C+",
+    "source": "evalplus"
+  },
+  "claude-2-mar-2024": {
+    "name": "claude-2 (Mar 2024)",
+    "score": 37,
+    "humaneval_plus": 61.6,
+    "mbpp_plus": 0,
+    "tier": "C+",
+    "source": "evalplus"
+  },
+  "claude-3-haiku-mar-2024": {
+    "name": "claude-3-haiku (Mar 2024)",
+    "score": 68.9,
+    "humaneval_plus": 68.9,
+    "mbpp_plus": 68.8,
+    "tier": "A",
+    "source": "evalplus"
+  },
+  "claude-3-opus-mar-2024": {
+    "name": "claude-3-opus (Mar 2024)",
+    "score": 75.8,
+    "humaneval_plus": 77.4,
+    "mbpp_plus": 73.3,
+    "tier": "A+",
+    "source": "evalplus"
+  },
+  "claude-3-sonnet-mar-2024": {
+    "name": "claude-3-sonnet (Mar 2024)",
+    "score": 66.1,
+    "humaneval_plus": 64,
+    "mbpp_plus": 69.3,
+    "tier": "A",
+    "source": "evalplus"
+  },
+  "claude-instant-1-mar-2024": {
+    "name": "claude-instant-1 (Mar 2024)",
+    "score": 30.4,
+    "humaneval_plus": 50.6,
+    "mbpp_plus": 0,
+    "tier": "C+",
+    "source": "evalplus"
+  },
+  "code-millenials-34b": {
+    "name": "code-millenials-34B",
+    "score": 68.3,
+    "humaneval_plus": 70.7,
+    "mbpp_plus": 64.6,
+    "tier": "A",
+    "source": "evalplus"
+  },
+  "codegemma-2b": {
+    "name": "codegemma-2b",
+    "score": 31.1,
+    "humaneval_plus": 20.7,
+    "mbpp_plus": 46.6,
+    "tier": "C+",
+    "source": "evalplus"
+  },
+  "codegemma-7b": {
+    "name": "codegemma-7b",
+    "score": 45.9,
+    "humaneval_plus": 41.5,
+    "mbpp_plus": 52.4,
+    "tier": "B",
+    "source": "evalplus"
+  },
+  "codegemma-7b-it": {
+    "name": "codegemma-7b-it",
+    "score": 53.8,
+    "humaneval_plus": 51.8,
+    "mbpp_plus": 56.9,
+    "tier": "B+",
+    "source": "evalplus"
+  },
+  "dolphin-2.6-mixtral-8x7b": {
+    "name": "dolphin-2.6-mixtral-8x7b",
+    "score": 58,
+    "humaneval_plus": 57.3,
+    "mbpp_plus": 59,
+    "tier": "B+",
+    "source": "evalplus"
+  },
+  "gemma-1.1-2b-it": {
+    "name": "gemma-1.1-2b-it",
+    "score": 19.9,
+    "humaneval_plus": 17.7,
+    "mbpp_plus": 23.3,
+    "tier": "C+",
+    "source": "evalplus"
+  },
+  "gemma-1.1-7b-it": {
+    "name": "gemma-1.1-7b-it",
+    "score": 39.2,
+    "humaneval_plus": 35.4,
+    "mbpp_plus": 45,
+    "tier": "C+",
+    "source": "evalplus"
+  },
+  "gemma-2b": {
+    "name": "gemma-2b",
+    "score": 26.1,
+    "humaneval_plus": 20.7,
+    "mbpp_plus": 34.1,
+    "tier": "C+",
+    "source": "evalplus"
+  },
+  "gemma-2b-it": {
+    "name": "gemma-2b-it",
+    "score": 9.1,
+    "humaneval_plus": 15.2,
+    "mbpp_plus": 0,
+    "tier": "C+",
+    "source": "evalplus"
+  },
+  "gemma-7b": {
+    "name": "gemma-7b",
+    "score": 34.6,
+    "humaneval_plus": 28.7,
+    "mbpp_plus": 43.4,
+    "tier": "C+",
+    "source": "evalplus"
+  },
+  "gemma-7b-it": {
+    "name": "gemma-7b-it",
+    "score": 29.7,
+    "humaneval_plus": 25,
+    "mbpp_plus": 36.8,
+    "tier": "C+",
+    "source": "evalplus"
+  },
+  "phi-3-mini-4k-instruct": {
+    "name": "Phi-3-mini-4k-instruct",
+    "score": 57.1,
+    "humaneval_plus": 59.1,
+    "mbpp_plus": 54.2,
+    "tier": "B+",
+    "source": "evalplus"
+  },
+  "phi-2-2.7b": {
+    "name": "phi-2-2.7B",
+    "score": 48.7,
+    "humaneval_plus": 45.1,
+    "mbpp_plus": 54.2,
+    "tier": "B",
+    "source": "evalplus"
+  },
+  "speechless-code-mistral-7b-v1.0": {
+    "name": "speechless-code-mistral-7B-v1.0",
+    "score": 44.4,
+    "humaneval_plus": 41.5,
+    "mbpp_plus": 48.7,
+    "tier": "C+",
+    "source": "evalplus"
+  },
+  "speechless-codellama-34b-v2.0": {
+    "name": "speechless-codellama-34B-v2.0",
+    "score": 67.8,
+    "humaneval_plus": 72,
+    "mbpp_plus": 61.4,
+    "tier": "A",
+    "source": "evalplus"
+  },
+  "speechless-coder-ds-6.7b": {
+    "name": "speechless-coder-ds-6.7B",
+    "score": 65.3,
+    "humaneval_plus": 65.9,
+    "mbpp_plus": 64.4,
+    "tier": "A",
+    "source": "evalplus"
+  },
+  "speechless-coding-7b-16k-tora": {
+    "name": "speechless-coding-7B-16k-tora",
+    "score": 50.6,
+    "humaneval_plus": 50.6,
+    "mbpp_plus": 50.6,
+    "tier": "B+",
+    "source": "evalplus"
+  },
+  "speechless-starcoder2-15b": {
+    "name": "speechless-starcoder2-15b",
+    "score": 62.6,
+    "humaneval_plus": 62.8,
+    "mbpp_plus": 62.4,
+    "tier": "A",
+    "source": "evalplus"
+  },
+  "speechless-starcoder2-7b": {
+    "name": "speechless-starcoder2-7b",
+    "score": 53.6,
+    "humaneval_plus": 51.8,
+    "mbpp_plus": 56.3,
+    "tier": "B+",
+    "source": "evalplus"
+  },
+  "stable-code-3b": {
+    "name": "stable-code-3B",
+    "score": 33.7,
+    "humaneval_plus": 25.6,
+    "mbpp_plus": 45.8,
+    "tier": "C+",
+    "source": "evalplus"
+  },
+  "xdan-l1-chat-rl-v1-7b": {
+    "name": "xDAN-L1-Chat-RL-v1-7B",
+    "score": 36.3,
+    "humaneval_plus": 32.9,
+    "mbpp_plus": 41.3,
+    "tier": "C+",
+    "source": "evalplus"
+  },
+  "zyte-1b": {
+    "name": "zyte-1B",
+    "score": 4.1,
+    "humaneval_plus": 1.8,
+    "mbpp_plus": 7.5,
+    "tier": "C+",
+    "source": "evalplus"
+  },
+  "sonar-foundation-agent-claude-4.5-opus": {
+    "name": "Sonar Foundation Agent + Claude 4.5 Opus",
+    "score": 79.2,
+    "swe_bench": 79.2,
+    "tier": "A+",
+    "source": "swebench-verified"
+  },
+  "live-swe-agent-claude-4.5-opus-medium-20251101": {
+    "name": "live-SWE-agent + Claude 4.5 Opus medium (20251101)",
+    "score": 79.2,
+    "swe_bench": 79.2,
+    "tier": "A+",
+    "source": "swebench-verified"
+  },
+  "trae-doubao-seed-code": {
+    "name": "TRAE + Doubao-Seed-Code",
+    "score": 78.8,
+    "swe_bench": 78.8,
+    "tier": "A+",
+    "source": "swebench-verified"
+  },
+  "live-swe-agent-gemini-3-pro-preview-2025-11-18": {
+    "name": "live-SWE-agent + Gemini 3 Pro Preview (2025-11-18)",
+    "score": 77.4,
+    "swe_bench": 77.4,
+    "tier": "A+",
+    "source": "swebench-verified"
+  },
+  "epam-ai-run-developer-agent-v20250719-claude-4-sonnet": {
+    "name": "EPAM AI/Run Developer Agent v20250719 + Claude 4 Sonnet",
+    "score": 76.8,
+    "swe_bench": 76.8,
+    "tier": "A+",
+    "source": "swebench-verified"
+  },
+  "atlassian-rovo-dev-2025-09-02": {
+    "name": "Atlassian Rovo Dev (2025-09-02)",
+    "score": 76.8,
+    "swe_bench": 76.8,
+    "tier": "A+",
+    "source": "swebench-verified"
+  },
+  "claude-4.5-opus-high": {
+    "name": "Claude 4.5 Opus (high)",
+    "score": 76.8,
+    "swe_bench": 76.8,
+    "tier": "A+",
+    "source": "swebench-verified"
+  },
+  "acoder": {
+    "name": "ACoder",
+    "score": 76.4,
+    "swe_bench": 76.4,
+    "tier": "A+",
+    "source": "swebench-verified"
+  },
+  "gemini-3-flash-high": {
+    "name": "Gemini 3 Flash (high)",
+    "score": 75.8,
+    "swe_bench": 75.8,
+    "tier": "A+",
+    "source": "swebench-verified"
+  },
+  "minimax-m2.5-high": {
+    "name": "MiniMax M2.5 (high)",
+    "score": 75.8,
+    "swe_bench": 75.8,
+    "tier": "A+",
+    "source": "swebench-verified"
+  },
+  "warp": {
+    "name": "Warp",
+    "score": 75.6,
+    "swe_bench": 75.6,
+    "tier": "A+",
+    "source": "swebench-verified"
+  },
+  "claude-4.6-opus": {
+    "name": "Claude 4.6 Opus",
+    "score": 75.6,
+    "swe_bench": 75.6,
+    "tier": "A+",
+    "source": "swebench-verified"
+  },
+  "trae-claude-sonnet-4-opus-4-sonnet-3.7-gemini-2.5-pro": {
+    "name": "TRAE + Claude Sonnet 4 + Opus 4 + Sonnet 3.7 + Gemini 2.5 Pro",
+    "score": 75.2,
+    "swe_bench": 75.2,
+    "tier": "A+",
+    "source": "swebench-verified"
+  },
+  "harness-ai": {
+    "name": "Harness AI",
+    "score": 74.8,
+    "swe_bench": 74.8,
+    "tier": "A+",
+    "source": "swebench-verified"
+  },
+  "sonar-foundation-agent-claude-4.5-sonnet": {
+    "name": "Sonar Foundation Agent + Claude 4.5 Sonnet",
+    "score": 74.8,
+    "swe_bench": 74.8,
+    "tier": "A+",
+    "source": "swebench-verified"
+  },
+  "lingxi-v1.5-claude-4-sonnet-20250514": {
+    "name": "Lingxi-v1.5_claude-4-sonnet-20250514",
+    "score": 74.6,
+    "swe_bench": 74.6,
+    "tier": "A+",
+    "source": "swebench-verified"
+  },
+  "joycode-claude-4-sonnet-gpt-4.1": {
+    "name": "JoyCode + Claude 4 Sonnet + GPT-4.1",
+    "score": 74.6,
+    "swe_bench": 74.6,
+    "tier": "A+",
+    "source": "swebench-verified"
+  },
+  "refact.ai-agent-claude-4-sonnet-o4-mini": {
+    "name": "Refact.ai Agent + Claude 4 Sonnet + o4-mini",
+    "score": 74.4,
+    "swe_bench": 74.4,
+    "tier": "A+",
+    "source": "swebench-verified"
+  },
+  "prometheus-v1.2.1-gpt-5": {
+    "name": "Prometheus-v1.2.1 + GPT-5",
+    "score": 74.4,
+    "swe_bench": 74.4,
+    "tier": "A+",
+    "source": "swebench-verified"
+  },
+  "claude-4.5-opus-20251101-medium": {
+    "name": "Claude 4.5 Opus (20251101) (medium)",
+    "score": 74.4,
+    "swe_bench": 74.4,
+    "tier": "A+",
+    "source": "swebench-verified"
+  },
+  "gemini-3-pro-preview-2025-11-18": {
+    "name": "Gemini 3 Pro Preview (2025-11-18)",
+    "score": 74.2,
+    "swe_bench": 74.2,
+    "tier": "A+",
+    "source": "swebench-verified"
+  },
+  "salesforce-ai-research-sage-openhands": {
+    "name": "Salesforce AI Research SAGE (OpenHands)",
+    "score": 73.8,
+    "swe_bench": 73.8,
+    "tier": "A+",
+    "source": "swebench-verified"
+  },
+  "tools-claude-4-opus-2025-05-22": {
+    "name": "Tools + Claude 4 Opus (2025-05-22)",
+    "score": 73.2,
+    "swe_bench": 73.2,
+    "tier": "A+",
+    "source": "swebench-verified"
+  },
+  "salesforce-ai-research-sage-bash-only": {
+    "name": "Salesforce AI Research SAGE (bash-only)",
+    "score": 73,
+    "swe_bench": 73,
+    "tier": "A+",
+    "source": "swebench-verified"
+  },
+  "glm-5-high": {
+    "name": "GLM 5 (high)",
+    "score": 72.8,
+    "swe_bench": 72.8,
+    "tier": "A+",
+    "source": "swebench-verified"
+  },
+  "gpt-5.2-high": {
+    "name": "GPT 5.2 (high)",
+    "score": 72.8,
+    "swe_bench": 72.8,
+    "tier": "A+",
+    "source": "swebench-verified"
+  },
+  "gpt-5.2-codex": {
+    "name": "GPT 5.2 Codex",
+    "score": 72.8,
+    "swe_bench": 72.8,
+    "tier": "A+",
+    "source": "swebench-verified"
+  },
+  "tools-claude-4-sonnet-2025-05-22": {
+    "name": "Tools + Claude 4 Sonnet (2025-05-22)",
+    "score": 72.4,
+    "swe_bench": 72.4,
+    "tier": "A+",
+    "source": "swebench-verified"
+  },
+  "openhands-gpt-5": {
+    "name": "OpenHands + GPT-5",
+    "score": 71.8,
+    "swe_bench": 71.8,
+    "tier": "A+",
+    "source": "swebench-verified"
+  },
+  "gpt-5.2-2025-12-11-high": {
+    "name": "GPT 5.2 (2025-12-11) (high)",
+    "score": 71.8,
+    "swe_bench": 71.8,
+    "tier": "A+",
+    "source": "swebench-verified"
+  },
+  "claude-4.5-sonnet-high": {
+    "name": "Claude 4.5 Sonnet (high)",
+    "score": 71.4,
+    "swe_bench": 71.4,
+    "tier": "A+",
+    "source": "swebench-verified"
+  },
+  "bloop": {
+    "name": "Bloop",
+    "score": 71.2,
+    "swe_bench": 71.2,
+    "tier": "A+",
+    "source": "swebench-verified"
+  },
+  "qodo-command": {
+    "name": "Qodo Command",
+    "score": 71.2,
+    "swe_bench": 71.2,
+    "tier": "A+",
+    "source": "swebench-verified"
+  },
+  "prometheus-v1.2-gpt-5": {
+    "name": "Prometheus-v1.2 + GPT-5",
+    "score": 71.2,
+    "swe_bench": 71.2,
+    "tier": "A+",
+    "source": "swebench-verified"
+  },
+  "lingxi-v1.5-x-kimi-k2": {
+    "name": "Lingxi v1.5 x Kimi K2",
+    "score": 71.2,
+    "swe_bench": 71.2,
+    "tier": "A+",
+    "source": "swebench-verified"
+  },
+  "moatless-tools-claude-4-sonnet": {
+    "name": "Moatless Tools + Claude 4 Sonnet",
+    "score": 70.8,
+    "swe_bench": 70.8,
+    "tier": "A+",
+    "source": "swebench-verified"
+  },
+  "kimi-k2.5-high": {
+    "name": "Kimi K2.5 (high)",
+    "score": 70.8,
+    "swe_bench": 70.8,
+    "tier": "A+",
+    "source": "swebench-verified"
+  },
+  "trae": {
+    "name": "TRAE",
+    "score": 70.6,
+    "swe_bench": 70.6,
+    "tier": "A+",
+    "source": "swebench-verified"
+  },
+  "claude-4.5-sonnet-20250929": {
+    "name": "Claude 4.5 Sonnet (20250929)",
+    "score": 70.6,
+    "swe_bench": 70.6,
+    "tier": "A+",
+    "source": "swebench-verified"
+  },
+  "refact.ai-agent": {
+    "name": "Refact.ai Agent",
+    "score": 70.4,
+    "swe_bench": 70.4,
+    "tier": "A+",
+    "source": "swebench-verified"
+  },
+  "openhands-claude-4-sonnet": {
+    "name": "OpenHands + Claude 4 Sonnet",
+    "score": 70.4,
+    "swe_bench": 70.4,
+    "tier": "A+",
+    "source": "swebench-verified"
+  },
+  "augment-agent-v1": {
+    "name": "Augment Agent v1",
+    "score": 70.4,
+    "swe_bench": 70.4,
+    "tier": "A+",
+    "source": "swebench-verified"
+  },
+  "devlo": {
+    "name": "devlo",
+    "score": 70.2,
+    "swe_bench": 70.2,
+    "tier": "A+",
+    "source": "swebench-verified"
+  },
+  "zencoder-2025-04-30": {
+    "name": "Zencoder (2025-04-30)",
+    "score": 70,
+    "swe_bench": 70,
+    "tier": "A+",
+    "source": "swebench-verified"
+  },
+  "deepseek-v3.2-high": {
+    "name": "DeepSeek V3.2 (high)",
+    "score": 70,
+    "swe_bench": 70,
+    "tier": "A+",
+    "source": "swebench-verified"
+  },
+  "openhands-qwen3-coder-480b-a35b-instruct": {
+    "name": "OpenHands + Qwen3-Coder-480B-A35B-Instruct",
+    "score": 69.6,
+    "swe_bench": 69.6,
+    "tier": "A",
+    "source": "swebench-verified"
+  },
+  "gemini-3-pro": {
+    "name": "Gemini 3 Pro",
+    "score": 69.6,
+    "swe_bench": 69.6,
+    "tier": "A",
+    "source": "swebench-verified"
+  },
+  "gpt-5.2-2025-12-11": {
+    "name": "GPT 5.2 (2025-12-11)",
+    "score": 69,
+    "swe_bench": 69,
+    "tier": "A",
+    "source": "swebench-verified"
+  },
+  "nemotron-cortexa": {
+    "name": "Nemotron-CORTEXA",
+    "score": 68.2,
+    "swe_bench": 68.2,
+    "tier": "A",
+    "source": "swebench-verified"
+  },
+  "glm-4.6": {
+    "name": "GLM-4.6",
+    "score": 68.2,
+    "swe_bench": 68.2,
+    "tier": "A",
+    "source": "swebench-verified"
+  },
+  "claude-4-opus-20250514": {
+    "name": "Claude 4 Opus (20250514)",
+    "score": 67.6,
+    "swe_bench": 67.6,
+    "tier": "A",
+    "source": "swebench-verified"
+  },
+  "swe-agent-claude-4-sonnet": {
+    "name": "SWE-agent + Claude 4 Sonnet",
+    "score": 66.6,
+    "swe_bench": 66.6,
+    "tier": "A",
+    "source": "swebench-verified"
+  },
+  "claude-4.5-haiku-high": {
+    "name": "Claude 4.5 Haiku (high)",
+    "score": 66.6,
+    "swe_bench": 66.6,
+    "tier": "A",
+    "source": "swebench-verified"
+  },
+  "aime-coder-v1-anthopic-claude-3.7-sonnet": {
+    "name": "Aime-coder v1 + Anthopic Claude 3.7 Sonnet",
+    "score": 66.4,
+    "swe_bench": 66.4,
+    "tier": "A",
+    "source": "swebench-verified"
+  },
+  "gpt-5.1-2025-11-13-medium": {
+    "name": "GPT 5.1 (2025-11-13) (medium)",
+    "score": 66,
+    "swe_bench": 66,
+    "tier": "A",
+    "source": "swebench-verified"
+  },
+  "gpt-5.1-codex-medium": {
+    "name": "GPT 5.1 Codex (medium)",
+    "score": 66,
+    "swe_bench": 66,
+    "tier": "A",
+    "source": "swebench-verified"
+  },
+  "openhands": {
+    "name": "OpenHands",
+    "score": 65.8,
+    "swe_bench": 65.8,
+    "tier": "A",
+    "source": "swebench-verified"
+  },
+  "augment-agent-v0": {
+    "name": "Augment Agent v0",
+    "score": 65.4,
+    "swe_bench": 65.4,
+    "tier": "A",
+    "source": "swebench-verified"
+  },
+  "amazon-q-developer-agent-v20250405-dev": {
+    "name": "Amazon Q Developer Agent (v20250405-dev)",
+    "score": 65.4,
+    "swe_bench": 65.4,
+    "tier": "A",
+    "source": "swebench-verified"
+  },
+  "openhands-kimi-k2": {
+    "name": "OpenHands + Kimi K2",
+    "score": 65.4,
+    "swe_bench": 65.4,
+    "tier": "A",
+    "source": "swebench-verified"
+  },
+  "gpt-5-2025-08-07-medium": {
+    "name": "GPT 5 (2025-08-07) (medium)",
+    "score": 65,
+    "swe_bench": 65,
+    "tier": "A",
+    "source": "swebench-verified"
+  },
+  "claude-4-sonnet-20250514": {
+    "name": "Claude 4 Sonnet (20250514)",
+    "score": 64.9,
+    "swe_bench": 64.9,
+    "tier": "A",
+    "source": "swebench-verified"
+  },
+  "w-b-programmer-o1-crosscheck5": {
+    "name": "W&B Programmer O1 crosscheck5",
+    "score": 64.6,
+    "swe_bench": 64.6,
+    "tier": "A",
+    "source": "swebench-verified"
+  },
+  "patchpilot-v1.1": {
+    "name": "PatchPilot-v1.1",
+    "score": 64.6,
+    "swe_bench": 64.6,
+    "tier": "A",
+    "source": "swebench-verified"
+  },
+  "glm-4.5": {
+    "name": "GLM-4.5",
+    "score": 64.2,
+    "swe_bench": 64.2,
+    "tier": "A",
+    "source": "swebench-verified"
+  },
+  "agentscope": {
+    "name": "AgentScope",
+    "score": 63.4,
+    "swe_bench": 63.4,
+    "tier": "A",
+    "source": "swebench-verified"
+  },
+  "kimi-k2-thinking": {
+    "name": "Kimi K2 Thinking",
+    "score": 63.4,
+    "swe_bench": 63.4,
+    "tier": "A",
+    "source": "swebench-verified"
+  },
+  "tools-claude-3.7-sonnet-2025-02-24": {
+    "name": "Tools + Claude 3.7 Sonnet (2025-02-24)",
+    "score": 63.2,
+    "swe_bench": 63.2,
+    "tier": "A",
+    "source": "swebench-verified"
+  },
+  "blackbox-ai-agent": {
+    "name": "Blackbox AI Agent",
+    "score": 62.8,
+    "swe_bench": 62.8,
+    "tier": "A",
+    "source": "swebench-verified"
+  },
+  "epam-ai-run-developer-agent-v20250219-anthopic-claude-3.5-sonnet": {
+    "name": "EPAM AI/Run Developer Agent v20250219 + Anthopic Claude 3.5 Sonnet",
+    "score": 62.8,
+    "swe_bench": 62.8,
+    "tier": "A",
+    "source": "swebench-verified"
+  },
+  "swe-agent-claude-3.7-sonnet-w-review-heavy": {
+    "name": "SWE-agent + Claude 3.7 Sonnet w/ Review Heavy",
+    "score": 62.4,
+    "swe_bench": 62.4,
+    "tier": "A",
+    "source": "swebench-verified"
+  },
+  "codestory-midwit-agent-swe-search": {
+    "name": "CodeStory Midwit Agent + swe-search",
+    "score": 62.2,
+    "swe_bench": 62.2,
+    "tier": "A",
+    "source": "swebench-verified"
+  },
+  "minimax-m2": {
+    "name": "MiniMax M2",
+    "score": 61,
+    "swe_bench": 61,
+    "tier": "A",
+    "source": "swebench-verified"
+  },
+  "openhands-4x-scaled-2024-02-03": {
+    "name": "OpenHands + 4x Scaled (2024-02-03)",
+    "score": 60.8,
+    "swe_bench": 60.8,
+    "tier": "A",
+    "source": "swebench-verified"
+  },
+  "entropo-r2e-qwen3-coder-30b-a3b-instruct": {
+    "name": "EntroPO + R2E + Qwen3-Coder-30B-A3B-Instruct",
+    "score": 60.4,
+    "swe_bench": 60.4,
+    "tier": "A",
+    "source": "swebench-verified"
+  },
+  "learn-by-interact": {
+    "name": "Learn-by-interact",
+    "score": 60.2,
+    "swe_bench": 60.2,
+    "tier": "A",
+    "source": "swebench-verified"
+  },
+  "deepseek-v3.2-reasoner": {
+    "name": "DeepSeek V3.2 Reasoner",
+    "score": 60,
+    "swe_bench": 60,
+    "tier": "A",
+    "source": "swebench-verified"
+  },
+  "gpt-5-mini-2025-08-07-medium": {
+    "name": "GPT 5 mini (2025-08-07) (medium)",
+    "score": 59.8,
+    "swe_bench": 59.8,
+    "tier": "B+",
+    "source": "swebench-verified"
+  },
+  "deepswe-preview-tts-bo16": {
+    "name": "DeepSWE-Preview + TTS(Bo16)",
+    "score": 58.8,
+    "swe_bench": 58.8,
+    "tier": "B+",
+    "source": "swebench-verified"
+  },
+  "o3-2025-04-16": {
+    "name": "o3 (2025-04-16)",
+    "score": 58.4,
+    "swe_bench": 58.4,
+    "tier": "B+",
+    "source": "swebench-verified"
+  },
+  "emergent-e1-v2024-12-23": {
+    "name": "Emergent E1 (v2024-12-23)",
+    "score": 57.2,
+    "swe_bench": 57.2,
+    "tier": "B+",
+    "source": "swebench-verified"
+  },
+  "gru-2024-12-08": {
+    "name": "Gru(2024-12-08)",
+    "score": 57,
+    "swe_bench": 57,
+    "tier": "B+",
+    "source": "swebench-verified"
+  },
+  "artemis-agent-v2-2025-09-24": {
+    "name": "Artemis Agent v2 (2025-09-24)",
+    "score": 57,
+    "swe_bench": 57,
+    "tier": "B+",
+    "source": "swebench-verified"
+  },
+  "swe-rizzo": {
+    "name": "SWE-Rizzo",
+    "score": 56.6,
+    "swe_bench": 56.6,
+    "tier": "B+",
+    "source": "swebench-verified"
+  },
+  "devstral-small-2512": {
+    "name": "Devstral Small (2512)",
+    "score": 56.4,
+    "swe_bench": 56.4,
+    "tier": "B+",
+    "source": "swebench-verified"
+  },
+  "gpt-5-mini": {
+    "name": "GPT 5 mini",
+    "score": 56.2,
+    "swe_bench": 56.2,
+    "tier": "B+",
+    "source": "swebench-verified"
+  },
+  "epam-ai-run-developer-agent-v20241212-anthopic-claude-3.5-sonnet": {
+    "name": "EPAM AI/Run Developer Agent v20241212 + Anthopic Claude 3.5 Sonnet",
+    "score": 55.4,
+    "swe_bench": 55.4,
+    "tier": "B+",
+    "source": "swebench-verified"
+  },
+  "qwen3-coder-480b-a35b-instruct": {
+    "name": "Qwen3-Coder 480B/A35B Instruct",
+    "score": 55.4,
+    "swe_bench": 55.4,
+    "tier": "B+",
+    "source": "swebench-verified"
+  },
+  "glm-4.6-t-1": {
+    "name": "GLM 4.6 (T=1)",
+    "score": 55.4,
+    "swe_bench": 55.4,
+    "tier": "B+",
+    "source": "swebench-verified"
+  },
+  "amazon-q-developer-agent-v20241202-dev": {
+    "name": "Amazon Q Developer Agent (v20241202-dev)",
+    "score": 55,
+    "swe_bench": 55,
+    "tier": "B+",
+    "source": "swebench-verified"
+  },
+  "glm-4.5-2025-08-22": {
+    "name": "GLM 4.5 (2025-08-22)",
+    "score": 54.2,
+    "swe_bench": 54.2,
+    "tier": "B+",
+    "source": "swebench-verified"
+  },
+  "devstral-2512": {
+    "name": "Devstral (2512)",
+    "score": 53.8,
+    "swe_bench": 53.8,
+    "tier": "B+",
+    "source": "swebench-verified"
+  },
+  "frogboss-32b-2510": {
+    "name": "FrogBoss-32B-2510",
+    "score": 53.6,
+    "swe_bench": 53.6,
+    "tier": "B+",
+    "source": "swebench-verified"
+  },
+  "gemini-2.5-pro-2025-05-06": {
+    "name": "Gemini 2.5 Pro (2025-05-06)",
+    "score": 53.6,
+    "swe_bench": 53.6,
+    "tier": "B+",
+    "source": "swebench-verified"
+  },
+  "codesweep---swe-agent---kimi-k2-instruct": {
+    "name": "CodeSweep - SWE-agent - Kimi K2 Instruct",
+    "score": 53.4,
+    "swe_bench": 53.4,
+    "tier": "B+",
+    "source": "swebench-verified"
+  },
+  "bracket.sh": {
+    "name": "Bracket.sh",
+    "score": 53.2,
+    "swe_bench": 53.2,
+    "tier": "B+",
+    "source": "swebench-verified"
+  },
+  "openhands-codeact-v2.1-claude-3-5-sonnet-20241022": {
+    "name": "OpenHands + CodeAct v2.1 (claude-3-5-sonnet-20241022)",
+    "score": 53,
+    "swe_bench": 53,
+    "tier": "B+",
+    "source": "swebench-verified"
+  },
+  "claude-3.7-sonnet-20250219": {
+    "name": "Claude 3.7 Sonnet (20250219)",
+    "score": 52.8,
+    "swe_bench": 52.8,
+    "tier": "B+",
+    "source": "swebench-verified"
+  },
+  "google-jules-gemini-2.0-flash-v20241212-experimental": {
+    "name": "Google Jules + Gemini 2.0 Flash (v20241212-experimental)",
+    "score": 52.2,
+    "swe_bench": 52.2,
+    "tier": "B+",
+    "source": "swebench-verified"
+  },
+  "engine-labs-2024-11-25": {
+    "name": "Engine Labs (2024-11-25)",
+    "score": 51.8,
+    "swe_bench": 51.8,
+    "tier": "B+",
+    "source": "swebench-verified"
+  },
+  "autocoderover-v2.1-claude-3.5-sonnet-20241022": {
+    "name": "AutoCodeRover-v2.1 (Claude-3.5-Sonnet-20241022)",
+    "score": 51.6,
+    "swe_bench": 51.6,
+    "tier": "B+",
+    "source": "swebench-verified"
+  },
+  "openhands-qwen3-coder-30b-a3b-instruct": {
+    "name": "OpenHands + Qwen3-Coder-30B-A3B-Instruct",
+    "score": 51.6,
+    "swe_bench": 51.6,
+    "tier": "B+",
+    "source": "swebench-verified"
+  },
+  "agentless-1.5-claude-3.5-sonnet-20241022": {
+    "name": "Agentless-1.5 + Claude-3.5 Sonnet (20241022)",
+    "score": 50.8,
+    "swe_bench": 50.8,
+    "tier": "B+",
+    "source": "swebench-verified"
+  },
+  "solver-2024-10-28": {
+    "name": "Solver (2024-10-28)",
+    "score": 50,
+    "swe_bench": 50,
+    "tier": "B+",
+    "source": "swebench-verified"
+  },
+  "bytedance-marscode-agent": {
+    "name": "Bytedance MarsCode Agent",
+    "score": 50,
+    "swe_bench": 50,
+    "tier": "B+",
+    "source": "swebench-verified"
+  },
+  "nfactorial-2024-11-05": {
+    "name": "nFactorial (2024-11-05)",
+    "score": 49.2,
+    "swe_bench": 49.2,
+    "tier": "B",
+    "source": "swebench-verified"
+  },
+  "tools-claude-3.5-sonnet-2024-10-22": {
+    "name": "Tools + Claude 3.5 Sonnet (2024-10-22)",
+    "score": 49,
+    "swe_bench": 49,
+    "tier": "B",
+    "source": "swebench-verified"
+  },
+  "composio-swe-kit-2024-10-25": {
+    "name": "Composio SWE-Kit (2024-10-25)",
+    "score": 48.6,
+    "swe_bench": 48.6,
+    "tier": "B",
+    "source": "swebench-verified"
+  },
+  "appmap-navie-v2": {
+    "name": "AppMap Navie v2",
+    "score": 47.2,
+    "swe_bench": 47.2,
+    "tier": "B",
+    "source": "swebench-verified"
+  },
+  "skywork-swe-32b-tts-bo8": {
+    "name": "Skywork-SWE-32B + TTS(Bo8)",
+    "score": 47,
+    "swe_bench": 47,
+    "tier": "B",
+    "source": "swebench-verified"
+  },
+  "openhands-devstral-small-2505": {
+    "name": "OpenHands + DevStral Small 2505",
+    "score": 46.8,
+    "swe_bench": 46.8,
+    "tier": "B",
+    "source": "swebench-verified"
+  },
+  "emergent-e1-v2024-10-12": {
+    "name": "Emergent E1 (v2024-10-12)",
+    "score": 46.6,
+    "swe_bench": 46.6,
+    "tier": "B",
+    "source": "swebench-verified"
+  },
+  "autocoderover-v2.0-claude-3.5-sonnet-20241022": {
+    "name": "AutoCodeRover-v2.0 (Claude-3.5-Sonnet-20241022)",
+    "score": 46.2,
+    "swe_bench": 46.2,
+    "tier": "B",
+    "source": "swebench-verified"
+  },
+  "patchpilot-co-patcher": {
+    "name": "PatchPilot + Co-PatcheR",
+    "score": 46,
+    "swe_bench": 46,
+    "tier": "B",
+    "source": "swebench-verified"
+  },
+  "solver-2024-09-12": {
+    "name": "Solver (2024-09-12)",
+    "score": 45.4,
+    "swe_bench": 45.4,
+    "tier": "B",
+    "source": "swebench-verified"
+  },
+  "gru-2024-08-24": {
+    "name": "Gru(2024-08-24)",
+    "score": 45.2,
+    "swe_bench": 45.2,
+    "tier": "B",
+    "source": "swebench-verified"
+  },
+  "frogmini-14b-2510": {
+    "name": "FrogMini-14B-2510",
+    "score": 45,
+    "swe_bench": 45,
+    "tier": "B",
+    "source": "swebench-verified"
+  },
+  "o4-mini-2025-04-16": {
+    "name": "o4-mini (2025-04-16)",
+    "score": 45,
+    "swe_bench": 45,
+    "tier": "B",
+    "source": "swebench-verified"
+  },
+  "codeshellagent-gemini-2.0-flash-experimental": {
+    "name": "CodeShellAgent + Gemini 2.0 Flash (Experimental)",
+    "score": 44.2,
+    "swe_bench": 44.2,
+    "tier": "C+",
+    "source": "swebench-verified"
+  },
+  "kimi-k2-instruct": {
+    "name": "Kimi K2 Instruct",
+    "score": 43.8,
+    "swe_bench": 43.8,
+    "tier": "C+",
+    "source": "swebench-verified"
+  },
+  "agentless-lite-o3-mini-20250214": {
+    "name": "Agentless Lite + O3 Mini (20250214)",
+    "score": 42.4,
+    "swe_bench": 42.4,
+    "tier": "C+",
+    "source": "swebench-verified"
+  },
+  "amazon-nova-premier-1.0-2025-04-30": {
+    "name": "Amazon Nova Premier 1.0 (2025-04-30)",
+    "score": 42.4,
+    "swe_bench": 42.4,
+    "tier": "C+",
+    "source": "swebench-verified"
+  },
+  "deepswe-preview": {
+    "name": "DeepSWE-Preview",
+    "score": 42.2,
+    "swe_bench": 42.2,
+    "tier": "C+",
+    "source": "swebench-verified"
+  },
+  "swe-exp": {
+    "name": "SWE-Exp",
+    "score": 42,
+    "swe_bench": 42,
+    "tier": "C+",
+    "source": "swebench-verified"
+  },
+  "nfactorial-2024-10-30": {
+    "name": "nFactorial (2024-10-30)",
+    "score": 41.6,
+    "swe_bench": 41.6,
+    "tier": "C+",
+    "source": "swebench-verified"
+  },
+  "ugaiforge": {
+    "name": "ugaiforge",
+    "score": 41.6,
+    "swe_bench": 41.6,
+    "tier": "C+",
+    "source": "swebench-verified"
+  },
+  "swe-rl-llama3-swe-rl-70b-agentless-mini-20250226": {
+    "name": "SWE-RL (Llama3-SWE-RL-70B + Agentless Mini) (20250226)",
+    "score": 41.2,
+    "swe_bench": 41.2,
+    "tier": "C+",
+    "source": "swebench-verified"
+  },
+  "honeycomb": {
+    "name": "Honeycomb",
+    "score": 40.6,
+    "swe_bench": 40.6,
+    "tier": "C+",
+    "source": "swebench-verified"
+  },
+  "composio-swekit-claude-3.5-sonnet-2024-10-16": {
+    "name": "Composio SWEkit + Claude 3.5 Sonnet (2024-10-16)",
+    "score": 40.6,
+    "swe_bench": 40.6,
+    "tier": "C+",
+    "source": "swebench-verified"
+  },
+  "tools-claude-3.5-haiku": {
+    "name": "Tools + Claude 3.5 Haiku",
+    "score": 40.6,
+    "swe_bench": 40.6,
+    "tier": "C+",
+    "source": "swebench-verified"
+  },
+  "nebius-ai-qwen-2.5-72b-generator-llama-3.1-70b-critic": {
+    "name": "Nebius AI Qwen 2.5 72B Generator + LLama 3.1 70B Critic",
+    "score": 40.6,
+    "swe_bench": 40.6,
+    "tier": "C+",
+    "source": "swebench-verified"
+  },
+  "swe-agent-swe-agent-lm-32b": {
+    "name": "SWE-agent + SWE-agent-LM-32B",
+    "score": 40.2,
+    "swe_bench": 40.2,
+    "tier": "C+",
+    "source": "swebench-verified"
+  },
+  "epam-ai-run-developer-agent-v20241029-anthopic-claude-3.5-sonnet": {
+    "name": "EPAM AI/Run Developer Agent v20241029 + Anthopic Claude 3.5 Sonnet",
+    "score": 39.6,
+    "swe_bench": 39.6,
+    "tier": "C+",
+    "source": "swebench-verified"
+  },
+  "gpt-4.1-2025-04-14": {
+    "name": "GPT 4.1 (2025-04-14)",
+    "score": 39.6,
+    "swe_bench": 39.6,
+    "tier": "C+",
+    "source": "swebench-verified"
+  },
+  "amazon-q-developer-agent-v20240719-dev": {
+    "name": "Amazon Q Developer Agent (v20240719-dev)",
+    "score": 38.8,
+    "swe_bench": 38.8,
+    "tier": "C+",
+    "source": "swebench-verified"
+  },
+  "agentless-1.5-gpt-4o-2024-05-13": {
+    "name": "Agentless-1.5 + GPT 4o (2024-05-13)",
+    "score": 38.8,
+    "swe_bench": 38.8,
+    "tier": "C+",
+    "source": "swebench-verified"
+  },
+  "autocoderover-v20240620-gpt-4o-2024-05-13": {
+    "name": "AutoCodeRover (v20240620) + GPT 4o (2024-05-13)",
+    "score": 38.4,
+    "swe_bench": 38.4,
+    "tier": "C+",
+    "source": "swebench-verified"
+  },
+  "skywork-swe-32b": {
+    "name": "Skywork-SWE-32B",
+    "score": 38,
+    "swe_bench": 38,
+    "tier": "C+",
+    "source": "swebench-verified"
+  },
+  "swe-agent-devstral-small-2507": {
+    "name": "SWE-agent + DevStral Small 2507",
+    "score": 38,
+    "swe_bench": 38,
+    "tier": "C+",
+    "source": "swebench-verified"
+  },
+  "factory-code-droid": {
+    "name": "Factory Code Droid",
+    "score": 37,
+    "swe_bench": 37,
+    "tier": "C+",
+    "source": "swebench-verified"
+  },
+  "gpt-5-nano-2025-08-07-medium": {
+    "name": "GPT 5 nano (2025-08-07) (medium)",
+    "score": 34.8,
+    "swe_bench": 34.8,
+    "tier": "C+",
+    "source": "swebench-verified"
+  },
+  "swe-agent-claude-3.5-sonnet": {
+    "name": "SWE-agent + Claude 3.5 Sonnet",
+    "score": 33.6,
+    "swe_bench": 33.6,
+    "tier": "C+",
+    "source": "swebench-verified"
+  },
+  "swe-fixer-qwen2.5-7b-retriever-qwen2.5-72b-editor": {
+    "name": "SWE-Fixer (Qwen2.5-7b retriever + Qwen2.5-72b editor)",
+    "score": 32.8,
+    "swe_bench": 32.8,
+    "tier": "C+",
+    "source": "swebench-verified"
+  },
+  "masai-gpt-4o-2024-06-12": {
+    "name": "MASAI + GPT 4o (2024-06-12)",
+    "score": 32.6,
+    "swe_bench": 32.6,
+    "tier": "C+",
+    "source": "swebench-verified"
+  },
+  "artemis-agent-v1-2024-11-20": {
+    "name": "Artemis Agent v1 (2024-11-20)",
+    "score": 32,
+    "swe_bench": 32,
+    "tier": "C+",
+    "source": "swebench-verified"
+  },
+  "nfactorial-2024-10-07": {
+    "name": "nFactorial (2024-10-07)",
+    "score": 31.6,
+    "swe_bench": 31.6,
+    "tier": "C+",
+    "source": "swebench-verified"
+  },
+  "swe-fixer-qwen2.5-7b-retriever-qwen2.5-72b-editor-20241128": {
+    "name": "SWE-Fixer (Qwen2.5-7b retriever + Qwen2.5-72b editor) 20241128",
+    "score": 30.2,
+    "swe_bench": 30.2,
+    "tier": "C+",
+    "source": "swebench-verified"
+  },
+  "lingma-agent-lingma-swe-gpt-72b-v0925": {
+    "name": "Lingma Agent + Lingma SWE-GPT 72b (v0925)",
+    "score": 28.8,
+    "swe_bench": 28.8,
+    "tier": "C+",
+    "source": "swebench-verified"
+  },
+  "gemini-2.5-flash-2025-04-17": {
+    "name": "Gemini 2.5 Flash (2025-04-17)",
+    "score": 28.7,
+    "swe_bench": 28.7,
+    "tier": "C+",
+    "source": "swebench-verified"
+  },
+  "epam-ai-run-developer-agent-gpt4o": {
+    "name": "EPAM AI/Run Developer Agent + GPT4o",
+    "score": 27,
+    "swe_bench": 27,
+    "tier": "C+",
+    "source": "swebench-verified"
+  },
+  "appmap-navie-gpt-4o-2024-05-13": {
+    "name": "AppMap Navie + GPT 4o (2024-05-13)",
+    "score": 26.2,
+    "swe_bench": 26.2,
+    "tier": "C+",
+    "source": "swebench-verified"
+  },
+  "gpt-oss-120b": {
+    "name": "gpt-oss-120b",
+    "score": 26,
+    "swe_bench": 26,
+    "tier": "C+",
+    "source": "swebench-verified"
+  },
+  "nfactorial-2024-10-01": {
+    "name": "nFactorial (2024-10-01)",
+    "score": 25.8,
+    "swe_bench": 25.8,
+    "tier": "C+",
+    "source": "swebench-verified"
+  },
+  "amazon-q-developer-agent-v20240430-dev": {
+    "name": "Amazon Q Developer Agent (v20240430-dev)",
+    "score": 25.6,
+    "swe_bench": 25.6,
+    "tier": "C+",
+    "source": "swebench-verified"
+  },
+  "lingma-agent-lingma-swe-gpt-72b-v0918": {
+    "name": "Lingma Agent + Lingma SWE-GPT 72b (v0918)",
+    "score": 25,
+    "swe_bench": 25,
+    "tier": "C+",
+    "source": "swebench-verified"
+  },
+  "gpt-4.1-mini-2025-04-14": {
+    "name": "GPT 4.1 mini (2025-04-14)",
+    "score": 23.9,
+    "swe_bench": 23.9,
+    "tier": "C+",
+    "source": "swebench-verified"
+  },
+  "swe-agent-gpt-4o-2024-05-13": {
+    "name": "SWE-agent + GPT 4o (2024-05-13)",
+    "score": 23.2,
+    "swe_bench": 23.2,
+    "tier": "C+",
+    "source": "swebench-verified"
+  },
+  "mcts-refine-7b": {
+    "name": "MCTS-Refine-7B",
+    "score": 23.2,
+    "swe_bench": 23.2,
+    "tier": "C+",
+    "source": "swebench-verified"
+  },
+  "swe-agent-gpt-4-1106": {
+    "name": "SWE-agent + GPT 4 (1106)",
+    "score": 22.4,
+    "swe_bench": 22.4,
+    "tier": "C+",
+    "source": "swebench-verified"
+  },
+  "gpt-4o-2024-11-20": {
+    "name": "GPT 4o (2024-11-20)",
+    "score": 21.6,
+    "swe_bench": 21.6,
+    "tier": "C+",
+    "source": "swebench-verified"
+  },
+  "llama-4-maverick-instruct": {
+    "name": "Llama 4 Maverick Instruct",
+    "score": 21,
+    "swe_bench": 21,
+    "tier": "C+",
+    "source": "swebench-verified"
+  },
+  "lingma-agent-lingma-swe-gpt-7b-v0925": {
+    "name": "Lingma Agent + Lingma SWE-GPT 7b (v0925)",
+    "score": 18.2,
+    "swe_bench": 18.2,
+    "tier": "C+",
+    "source": "swebench-verified"
+  },
+  "swe-agent-claude-3-opus": {
+    "name": "SWE-agent + Claude 3 Opus",
+    "score": 15.8,
+    "swe_bench": 15.8,
+    "tier": "C+",
+    "source": "swebench-verified"
+  },
+  "lingma-agent-lingma-swe-gpt-7b-v0918": {
+    "name": "Lingma Agent + Lingma SWE-GPT 7b (v0918)",
+    "score": 10.2,
+    "swe_bench": 10.2,
+    "tier": "C+",
+    "source": "swebench-verified"
+  },
+  "llama-4-scout-instruct": {
+    "name": "Llama 4 Scout Instruct",
+    "score": 9.1,
+    "swe_bench": 9.1,
+    "tier": "C+",
+    "source": "swebench-verified"
+  },
+  "rag-claude-3-opus": {
+    "name": "RAG + Claude 3 Opus",
+    "score": 7,
+    "swe_bench": 7,
+    "tier": "C+",
+    "source": "swebench-verified"
+  },
+  "rag-claude-2": {
+    "name": "RAG + Claude 2",
+    "score": 4.4,
+    "swe_bench": 4.4,
+    "tier": "C+",
+    "source": "swebench-verified"
+  },
+  "rag-gpt-4-1106": {
+    "name": "RAG + GPT 4 (1106)",
+    "score": 2.8,
+    "swe_bench": 2.8,
+    "tier": "C+",
+    "source": "swebench-verified"
+  },
+  "rag-swe-llama-7b": {
+    "name": "RAG + SWE-Llama 7B",
+    "score": 1.4,
+    "swe_bench": 1.4,
+    "tier": "C+",
+    "source": "swebench-verified"
+  },
+  "rag-swe-llama-13b": {
+    "name": "RAG + SWE-Llama 13B",
+    "score": 1.2,
+    "swe_bench": 1.2,
+    "tier": "C+",
+    "source": "swebench-verified"
+  },
+  "rag-chatgpt-3.5": {
+    "name": "RAG + ChatGPT 3.5",
+    "score": 0.4,
+    "swe_bench": 0.4,
+    "tier": "C+",
+    "source": "swebench-verified"
+  },
+  "gpt-4-turbo-2024-04-09": {
+    "name": "GPT-4-Turbo-2024-04-09",
+    "score": 37.3,
+    "livecodebench": 37.3,
+    "tier": "C+",
+    "source": "livecodebench"
+  },
+  "gpt-4o-2024-08-06": {
+    "name": "GPT-4O-2024-08-06",
+    "score": 38.3,
+    "livecodebench": 38.3,
+    "tier": "C+",
+    "source": "livecodebench"
+  },
+  "gpt-4o-mini-2024-07-18": {
+    "name": "GPT-4O-mini-2024-07-18",
+    "score": 35.5,
+    "livecodebench": 35.5,
+    "tier": "C+",
+    "source": "livecodebench"
+  },
+  "o3-mini-2025-01-31-low": {
+    "name": "O3-Mini-2025-01-31 (Low)",
+    "score": 70.6,
+    "livecodebench": 70.6,
+    "tier": "A+",
+    "source": "livecodebench"
+  },
+  "o3-mini-2025-01-31-med": {
+    "name": "O3-Mini-2025-01-31 (Med)",
+    "score": 75.4,
+    "livecodebench": 75.4,
+    "tier": "A+",
+    "source": "livecodebench"
+  },
+  "o3-mini-2025-01-31-high": {
+    "name": "O3-Mini-2025-01-31 (High)",
+    "score": 77.7,
+    "livecodebench": 77.7,
+    "tier": "A+",
+    "source": "livecodebench"
+  },
+  "o4-mini-high": {
+    "name": "O4-Mini (High)",
+    "score": 87.3,
+    "livecodebench": 87.3,
+    "tier": "S",
+    "source": "livecodebench"
+  },
+  "o4-mini-medium": {
+    "name": "O4-Mini (Medium)",
+    "score": 84.5,
+    "livecodebench": 84.5,
+    "tier": "S",
+    "source": "livecodebench"
+  },
+  "o4-mini-low": {
+    "name": "O4-Mini (Low)",
+    "score": 77.4,
+    "livecodebench": 77.4,
+    "tier": "A+",
+    "source": "livecodebench"
+  },
+  "o3-high": {
+    "name": "O3 (High)",
+    "score": 84.7,
+    "livecodebench": 84.7,
+    "tier": "S",
+    "source": "livecodebench"
+  },
+  "claude-3.5-sonnet-20241022": {
+    "name": "Claude-3.5-Sonnet-20241022",
+    "score": 48.7,
+    "livecodebench": 48.7,
+    "tier": "B",
+    "source": "livecodebench"
+  },
+  "claude-3-haiku": {
+    "name": "Claude-3-Haiku",
+    "score": 22.5,
+    "livecodebench": 22.5,
+    "tier": "C+",
+    "source": "livecodebench"
+  },
+  "claude-sonnet-4-thinking": {
+    "name": "Claude-Sonnet-4 (Thinking)",
+    "score": 68.5,
+    "livecodebench": 68.5,
+    "tier": "A",
+    "source": "livecodebench"
+  },
+  "claude-opus-4-thinking": {
+    "name": "Claude-Opus-4 (Thinking)",
+    "score": 70.4,
+    "livecodebench": 70.4,
+    "tier": "A+",
+    "source": "livecodebench"
+  },
+  "claude-opus-4": {
+    "name": "Claude-Opus-4",
+    "score": 62.4,
+    "livecodebench": 62.4,
+    "tier": "A",
+    "source": "livecodebench"
+  },
+  "claude-sonnet-4": {
+    "name": "Claude-Sonnet-4",
+    "score": 59.4,
+    "livecodebench": 59.4,
+    "tier": "B+",
+    "source": "livecodebench"
+  },
+  "gemini-2.5-pro-06-05": {
+    "name": "Gemini-2.5-Pro-06-05",
+    "score": 84.3,
+    "livecodebench": 84.3,
+    "tier": "S",
+    "source": "livecodebench"
+  },
+  "gemini-2.5-pro-05-06": {
+    "name": "Gemini-2.5-Pro-05-06",
+    "score": 82.7,
+    "livecodebench": 82.7,
+    "tier": "S",
+    "source": "livecodebench"
+  },
+  "gemini-2.5-flash-04-17": {
+    "name": "Gemini-2.5-Flash-04-17",
+    "score": 75.1,
+    "livecodebench": 75.1,
+    "tier": "A+",
+    "source": "livecodebench"
+  },
+  "gemini-2.5-flash-05-20": {
+    "name": "Gemini-2.5-Flash-05-20",
+    "score": 76.2,
+    "livecodebench": 76.2,
+    "tier": "A+",
+    "source": "livecodebench"
+  },
+  "qwen3-235b-a22b": {
+    "name": "Qwen3-235B-A22B",
+    "score": 80.4,
+    "livecodebench": 80.4,
+    "tier": "S",
+    "source": "livecodebench"
+  },
+  "deepseek-r1-0528": {
+    "name": "DeepSeek-R1-0528",
+    "score": 84.4,
+    "livecodebench": 84.4,
+    "tier": "S",
+    "source": "livecodebench"
+  },
+  "grok-3-mini-high": {
+    "name": "Grok-3-Mini (High)",
+    "score": 78.1,
+    "livecodebench": 78.1,
+    "tier": "A+",
+    "source": "livecodebench"
+  },
+  "opencodereasoning-nemotron-1.1-32b": {
+    "name": "OpenCodeReasoning-Nemotron-1.1-32B",
+    "score": 78.5,
+    "livecodebench": 78.5,
+    "tier": "A+",
+    "source": "livecodebench"
+  },
+  "openreasoning-nemotron-32b": {
+    "name": "OpenReasoning-Nemotron-32B",
+    "score": 81,
+    "livecodebench": 81,
+    "tier": "S",
+    "source": "livecodebench"
+  },
+  "xbai-o4-medium": {
+    "name": "XBai-o4-medium",
+    "score": 80.1,
+    "livecodebench": 80.1,
+    "tier": "S",
+    "source": "livecodebench"
+  },
+  "exaone-4.0-32b": {
+    "name": "EXAONE-4.0-32B",
+    "score": 80.9,
+    "livecodebench": 80.9,
+    "tier": "S",
+    "source": "livecodebench"
+  }
+}
