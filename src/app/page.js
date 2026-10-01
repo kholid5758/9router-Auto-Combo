@@ -2024,7 +2024,7 @@ export default function ComboGeneratorPage() {
                         </button>
                       </td>
                       <td className="px-5 py-3 text-right font-sans">
-                        p.isInstalled ? (
+                        {p.isInstalled && (
                           <div className="flex items-center justify-end">
                             <button
                               disabled={testingAllModels}
@@ -2035,9 +2035,7 @@ export default function ComboGeneratorPage() {
                               <span>⚡ Test</span>
                             </button>
                           </div>
-                        ) : (
-                          <span className="text-text-subtle text-[11px] font-mono">-</span>
-                        )
+                        )}
                       </td>
                     </tr>
                   ))}
