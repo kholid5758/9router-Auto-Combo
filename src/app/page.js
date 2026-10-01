@@ -737,11 +737,11 @@ export default function ComboGeneratorPage() {
       const data = await res.json();
       if (data.success) {
         setProviders((prev) =>
-          prev.map((p) =>
-            p.key === providerItem.key || p.connectionId === providerItem.connectionId
-              ? { ...p, autoSyncEnabled: nextState }
-              : p
-          )
+          prev.map((p) => {
+            const isMatch = (providerItem.connectionId && p.connectionId && p.connectionId === providerItem.connectionId) ||
+                            (p.key === providerItem.key);
+            return isMatch ? { ...p, autoSyncEnabled: nextState } : p;
+          })
         );
       } else {
         alert(data.error || "Gagal mengubah status auto-sync");

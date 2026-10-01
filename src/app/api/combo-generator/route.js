@@ -249,8 +249,8 @@ export async function GET(request) {
         defaultPrefix: alias,
         isCustom: false,
         needsAccountId: false,
-        isInstalled: allConns.length > 0 || !!info.noAuth,
-        isActive: activeConns.length > 0 || !!info.noAuth,
+        isInstalled: allConns.length > 0,
+        isActive: activeConns.length > 0,
         autoSyncEnabled: cfg.enabled !== false,
         connectionId: primaryConn?.id || null,
         connectionName: primaryConn?.name || null,
@@ -488,10 +488,12 @@ export async function POST(request) {
     if (action === "toggle_sync" || action === "toggle-sync") {
       const { id, providerKey, enabled } = body;
       const customConfig = storage.readCustomProvidersFile();
-      const targetKey = id || providerKey;
-      if (!targetKey) throw new Error("Provider ID or Key is required");
-      if (!customConfig[targetKey]) customConfig[targetKey] = {};
-      customConfig[targetKey].enabled = !!enabled;
+      const keysToUpdate = [id, providerKey].filter(Boolean);
+      if (keysToUpdate.length === 0) throw new Error("Provider ID or Key is required");
+      for (const k of keysToUpdate) {
+        if (!customConfig[k]) customConfig[k] = {};
+        customConfig[k].enabled = !!enabled;
+      }
       storage.writeCustomProvidersFile(customConfig);
       return NextResponse.json({
         success: true,

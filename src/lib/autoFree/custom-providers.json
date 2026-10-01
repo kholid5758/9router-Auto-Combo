@@ -46,5 +46,23 @@
   },
   "02f95889-0fca-44fc-99db-43b25f02e75d": {
     "enabled": false
+  },
+  "589fdb40-17e2-41c0-962e-3585d004f282": {
+    "enabled": false
+  },
+  "b48c4b14-4683-4c52-8659-f113056aa2fc": {
+    "enabled": false
+  },
+  "claude": {
+    "enabled": false
+  },
+  "opencode": {
+    "enabled": false
+  },
+  "codebuddy-cn": {
+    "enabled": false
+  },
+  "glm": {
+    "enabled": true
   }
 }
