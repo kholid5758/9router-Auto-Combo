@@ -63,6 +63,120 @@
     "enabled": false
   },
   "glm": {
-    "enabled": true
+    "enabled": false
+  },
+  "clinepass": {
+    "enabled": false
+  },
+  "cursor": {
+    "enabled": false
+  },
+  "github": {
+    "enabled": false
+  },
+  "muse": {
+    "enabled": false
+  },
+  "kimi": {
+    "enabled": false
+  },
+  "codex": {
+    "enabled": false
+  },
+  "qoder-cn": {
+    "enabled": false
+  },
+  "xai": {
+    "enabled": false
+  },
+  "xiaomi-mimo": {
+    "enabled": false
+  },
+  "zed": {
+    "enabled": false
+  },
+  "agnes": {
+    "enabled": false
+  },
+  "byteplus": {
+    "enabled": false
+  },
+  "kilo-gateway": {
+    "enabled": false
+  },
+  "kimchi": {
+    "enabled": false
+  },
+  "vertex": {
+    "enabled": false
+  },
+  "alicode": {
+    "enabled": false
+  },
+  "alicode-intl": {
+    "enabled": false
+  },
+  "alitp-intl": {
+    "enabled": false
+  },
+  "anthropic": {
+    "enabled": false
+  },
+  "atria": {
+    "enabled": false
+  },
+  "azure": {
+    "enabled": false
+  },
+  "baidu": {
+    "enabled": false
+  },
+  "blackbox": {
+    "enabled": false
+  },
+  "cerebras": {
+    "enabled": false
+  },
+  "chutes": {
+    "enabled": false
+  },
+  "cohere": {
+    "enabled": false
+  },
+  "commandcode": {
+    "enabled": false
+  },
+  "dahl": {
+    "enabled": false
+  },
+  "deepseek": {
+    "enabled": false
+  },
+  "featherless": {
+    "enabled": false
+  },
+  "fireworks": {
+    "enabled": false
+  },
+  "glm-cn": {
+    "enabled": false
+  },
+  "hyperbolic": {
+    "enabled": false
+  },
+  "minimax-cn": {
+    "enabled": false
+  },
+  "minimax": {
+    "enabled": false
+  },
+  "morph": {
+    "enabled": false
+  },
+  "nebius": {
+    "enabled": false
+  },
+  "ollama-local": {
+    "enabled": false
   }
 }

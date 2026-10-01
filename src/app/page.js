@@ -2026,12 +2026,15 @@ export default function ComboGeneratorPage() {
                       <td className="px-5 py-3 text-right font-sans">
                         {!p.isInstalled ? (
                           p.category === "OAuth Providers" ? (
-                            <Link
-                              href={`/dashboard/providers/${p.providerKey || p.key}`}
+                            <a
+                              href={`${stats.nineRouterUrl || "http://127.0.0.1:20128"}/providers/${p.providerKey || p.key}`}
+                              target="_blank"
+                              rel="noreferrer"
                               className="px-3 py-1 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-[11px] transition shadow inline-flex items-center space-x-1"
+                              title="Buka halaman OAuth Login di 9router Gateway"
                             >
-                              <span>OAuth Login</span>
-                            </Link>
+                              <span>OAuth Login ↗</span>
+                            </a>
                           ) : (
                             <button
                               onClick={() => handleOpenAddModal(p.key)}
