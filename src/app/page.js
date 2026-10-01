@@ -2027,7 +2027,7 @@ export default function ComboGeneratorPage() {
                         {!p.isInstalled ? (
                           p.category === "OAuth Providers" ? (
                             <a
-                              href={`${stats.nineRouterUrl || "http://127.0.0.1:20128"}/providers/${p.providerKey || p.key}`}
+                              href={`${stats.nineRouterUrl || "http://127.0.0.1:20128"}/dashboard/providers/${p.providerKey || p.key}`}
                               target="_blank"
                               rel="noreferrer"
                               className="px-3 py-1 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-[11px] transition shadow inline-flex items-center space-x-1"
