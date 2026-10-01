@@ -2024,26 +2024,7 @@ export default function ComboGeneratorPage() {
                         </button>
                       </td>
                       <td className="px-5 py-3 text-right font-sans">
-                        {!p.isInstalled ? (
-                          p.category === "OAuth Providers" ? (
-                            <a
-                              href={`${stats.nineRouterUrl || "http://127.0.0.1:20128"}/dashboard/providers/${p.providerKey || p.key}`}
-                              target="_blank"
-                              rel="noreferrer"
-                              className="px-3 py-1 rounded-lg bg-indigo-600 hover:bg-indigo-500 text-white font-bold text-[11px] transition shadow inline-flex items-center space-x-1"
-                              title="Buka halaman OAuth Login di 9router Gateway"
-                            >
-                              <span>OAuth Login ↗</span>
-                            </a>
-                          ) : (
-                            <button
-                              onClick={() => handleOpenAddModal(p.key)}
-                              className="px-3 py-1 rounded-lg bg-brand-500 hover:bg-brand-600 text-white font-semibold text-[11px] transition shadow-sm"
-                            >
-                              {t("prov_btn_connect")}
-                            </button>
-                          )
-                        ) : (
+                        p.isInstalled ? (
                           <div className="flex items-center justify-end">
                             <button
                               disabled={testingAllModels}
@@ -2054,7 +2035,9 @@ export default function ComboGeneratorPage() {
                               <span>⚡ Test</span>
                             </button>
                           </div>
-                        )}
+                        ) : (
+                          <span className="text-text-subtle text-[11px] font-mono">-</span>
+                        )
                       </td>
                     </tr>
                   ))}
