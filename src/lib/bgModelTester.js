@@ -276,34 +276,55 @@ async function _runTestLoop({ routerUrl, token, providerFilter, autoDisableFaile
         if (Array.isArray(p.prefixes)) p.prefixes.forEach((pref) => installedKeys.add(String(pref).toLowerCase()));
       });
 
+    // If providers list is empty, build node mapping from SQLite DB
+    const Database = require("better-sqlite3");
+    const db = new Database(process.env.DATA_DIR ? require("path").join(process.env.DATA_DIR, "db/data.sqlite") : require("path").join(process.env.HOME || "/root", ".9router/db/data.sqlite"), { readonly: true });
+    const dbNodes = db.prepare("SELECT id, type, name, data FROM providerNodes").all();
+    db.close();
+
+    const nodePrefixMap = {};
+    for (const n of dbNodes) {
+      try {
+        const d = JSON.parse(n.data || "{}");
+        if (d.prefix) nodePrefixMap[n.id.toLowerCase()] = d.prefix.toLowerCase();
+      } catch (_) {}
+    }
+
     const candidateModels = allModels.filter((m) => {
       const pKey = String(m.provider || "").toLowerCase();
+      const rawFull = String(m.fullModel || m.id || "").toLowerCase();
+      const prefixFromModel = rawFull.split("/")[0];
+
       if (providerFilter) {
         const specKey = String(providerFilter).toLowerCase();
+        const nodePrefix = nodePrefixMap[specKey];
+
         const targetProv = (providers || []).find(
           (p) =>
             String(p.key || "").toLowerCase() === specKey ||
-            String(p.providerKey || "").toLowerCase() === specKey
+            String(p.providerKey || "").toLowerCase() === specKey ||
+            (p.prefixes && p.prefixes.some((pr) => String(pr).toLowerCase() === specKey))
         );
         const allowed = new Set([specKey]);
+        if (nodePrefix) allowed.add(nodePrefix);
         if (targetProv?.key) allowed.add(targetProv.key.toLowerCase());
         if (targetProv?.providerKey) allowed.add(targetProv.providerKey.toLowerCase());
         if (targetProv?.defaultPrefix) allowed.add(targetProv.defaultPrefix.toLowerCase());
         if (Array.isArray(targetProv?.prefixes)) {
           targetProv.prefixes.forEach((pr) => allowed.add(String(pr).toLowerCase()));
         }
-        return allowed.has(pKey);
+        return allowed.has(pKey) || allowed.has(prefixFromModel);
       }
       if (installedKeys.size === 0) return true;
-      return installedKeys.has(pKey);
+      return installedKeys.has(pKey) || installedKeys.has(prefixFromModel);
     });
 
-    // Filter enabled models
-    const targetModels = candidateModels.filter(
-      (m) => !isIdDisabled(m.fullModel, m.provider, m.model)
-    );
+    // Filter enabled models (if specific providerFilter selected, always test all its available models)
+    const targetModels = providerFilter
+      ? candidateModels
+      : candidateModels.filter((m) => !isIdDisabled(m.fullModel, m.provider, m.model));
 
-    const listToTest = targetModels.length > 0 ? targetModels : candidateModels;
+    const listToTest = targetModels;
 
     if (listToTest.length === 0) {
       g.progress.running = false;
