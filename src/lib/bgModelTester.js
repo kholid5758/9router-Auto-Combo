@@ -58,28 +58,82 @@ function loadPersistedState() {
  * Fetch model list from 9router's internal /api/models endpoint
  */
 async function fetchModelList(routerUrl, token) {
-  const res = await fetch(`${routerUrl}/api/models`, {
-    headers: {
-      "Content-Type": "application/json",
-      ...(token ? (token.startsWith("sk-") ? { "Authorization": `Bearer ${token}` } : { "x-9r-cli-token": token, "Authorization": `Bearer ${token}` }) : {}),
-    },
-    signal: AbortSignal.timeout(60000),
-  });
-  const data = await res.json();
-  const rawList = Array.isArray(data.data) ? data.data : (Array.isArray(data.models) ? data.models : []);
-  return rawList
-    .filter((m) => m && m.id && m.owned_by !== "combo")
-    .map((m) => {
-      const parts = m.id.split("/");
-      const provider = m.owned_by || parts[0];
-      const model = parts.length > 1 ? parts.slice(1).join("/") : m.id;
-      return {
-        id: m.id,
-        fullModel: m.id,
-        provider: provider,
-        model: model,
-      };
+  const modelsMap = new Map();
+
+  // 1. Fetch from 9router internal /api/models endpoint
+  try {
+    const res = await fetch(`${routerUrl}/api/models`, {
+      headers: {
+        "Content-Type": "application/json",
+        ...(token ? (token.startsWith("sk-") ? { "Authorization": `Bearer ${token}` } : { "x-9r-cli-token": token, "Authorization": `Bearer ${token}` }) : {}),
+      },
+      signal: AbortSignal.timeout(60000),
     });
+    const data = await res.json();
+    const rawList = Array.isArray(data.data) ? data.data : (Array.isArray(data.models) ? data.models : []);
+    rawList
+      .filter((m) => m && m.id && m.owned_by !== "combo")
+      .forEach((m) => {
+        const parts = m.id.split("/");
+        const provider = m.owned_by || parts[0];
+        const model = parts.length > 1 ? parts.slice(1).join("/") : m.id;
+        modelsMap.set(m.id, {
+          id: m.id,
+          fullModel: m.id,
+          provider: provider,
+          model: model,
+        });
+      });
+  } catch (_) {}
+
+  // 2. Also read customModels from SQLite DB to ensure all registered custom models are included (even if filtered out by 9router /api/models)
+  try {
+    const Database = require("better-sqlite3");
+    const dbPath = process.env.DATA_DIR ? require("path").join(process.env.DATA_DIR, "db/data.sqlite") : require("path").join(process.env.HOME || "/root", ".9router/db/data.sqlite");
+    if (require("fs").existsSync(dbPath)) {
+      const db = new Database(dbPath, { readonly: true });
+      const nodes = db.prepare("SELECT id, type, name, data FROM providerNodes").all();
+      const customRows = db.prepare("SELECT key, value FROM kv WHERE scope = 'customModels'").all();
+      db.close();
+
+      const nodePrefixMap = {};
+      for (const n of nodes) {
+        try {
+          const d = JSON.parse(n.data || "{}");
+          if (d.prefix) {
+            nodePrefixMap[n.id] = d.prefix;
+            nodePrefixMap[n.id.toLowerCase()] = d.prefix;
+          }
+        } catch (_) {}
+      }
+
+      for (const row of customRows) {
+        try {
+          const parts = row.key.split("|");
+          if (parts.length >= 2) {
+            const nodeOrAlias = parts[0];
+            const rawModel = parts[1];
+            let val = {};
+            try { val = JSON.parse(row.value); } catch(_) {}
+            const modelId = val.id || rawModel;
+            const prefix = nodePrefixMap[nodeOrAlias] || nodePrefixMap[nodeOrAlias.toLowerCase()] || val.providerAlias || nodeOrAlias;
+            const fullModel = `${prefix}/${modelId}`;
+
+            if (!modelsMap.has(fullModel)) {
+              modelsMap.set(fullModel, {
+                id: fullModel,
+                fullModel: fullModel,
+                provider: nodeOrAlias,
+                model: modelId,
+              });
+            }
+          }
+        } catch (_) {}
+      }
+    }
+  } catch (_) {}
+
+  return Array.from(modelsMap.values());
 }
 
 /**
