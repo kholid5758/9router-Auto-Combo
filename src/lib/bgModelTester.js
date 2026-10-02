@@ -63,7 +63,7 @@ async function fetchModelList(routerUrl, token) {
       "Content-Type": "application/json",
       ...(token ? (token.startsWith("sk-") ? { "Authorization": `Bearer ${token}` } : { "x-9r-cli-token": token, "Authorization": `Bearer ${token}` }) : {}),
     },
-    signal: AbortSignal.timeout(15000),
+    signal: AbortSignal.timeout(60000),
   });
   const data = await res.json();
   const rawList = Array.isArray(data.data) ? data.data : (Array.isArray(data.models) ? data.models : []);

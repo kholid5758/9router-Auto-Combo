@@ -188,6 +188,87 @@ async function fetchLiveCodeBench() {
   }
 }
 
+// Fetch BenchLM Leaderboard (category: coding)
+async function fetchBenchLMBenchmarks() {
+  const url = "https://benchlm.ai/api/data/leaderboard?category=coding&limit=200";
+  try {
+    console.log("[*] Fetching BenchLM coding leaderboard...");
+    const res = await fetch(url, { signal: AbortSignal.timeout(15000) });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const data = await res.json();
+    const models = Array.isArray(data.models) ? data.models : [];
+    const parsed = {};
+
+    for (const item of models) {
+      const name = item.model || item.name;
+      const codingScore = item.categoryScores?.coding ?? item.overallScore;
+      if (!name || typeof codingScore !== "number" || codingScore <= 0) continue;
+
+      const score = Math.round(codingScore * 10) / 10;
+      const key = normalizeKey(name);
+      if (!key) continue;
+
+      parsed[key] = {
+        name,
+        score,
+        benchlm: score,
+        tier: determineTier(score),
+        source: "benchlm"
+      };
+    }
+    console.log(`[+] Parsed ${Object.keys(parsed).length} models from BenchLM.`);
+    return parsed;
+  } catch (err) {
+    console.warn(`[!] Note: Could not fetch BenchLM data (${err.message}). Skipping.`);
+    return null;
+  }
+}
+
+// Fetch OpenRouter catalog & popular models
+async function fetchOpenRouterCatalog() {
+  const url = "https://openrouter.ai/api/v1/models";
+  try {
+    console.log("[*] Fetching OpenRouter model metadata...");
+    const res = await fetch(url, { signal: AbortSignal.timeout(15000) });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const data = await res.json();
+    const models = Array.isArray(data.data) ? data.data : [];
+    const parsed = {};
+
+    for (const m of models) {
+      if (!m || !m.id) continue;
+      const rawId = m.id.toLowerCase();
+      const name = m.name || m.id;
+      const key = normalizeKey(name);
+      const rawKey = normalizeKey(m.id);
+
+      // Heuristic baseline score for newly released models in OpenRouter catalog
+      let score = 55.0;
+      if (rawId.includes("claude-3.7") || rawId.includes("claude-sonnet-4") || rawId.includes("claude-opus-5") || rawId.includes("gpt-5") || rawId.includes("gpt-6")) score = 82.0;
+      else if (rawId.includes("r1") || rawId.includes("o1") || rawId.includes("o3") || rawId.includes("gemini-2.5-pro") || rawId.includes("gemini-3")) score = 78.0;
+      else if (rawId.includes("deepseek-v4") || rawId.includes("qwen3") || rawId.includes("codestral") || rawId.includes("coder")) score = 72.0;
+      else if (rawId.includes("flash") || rawId.includes("mini") || rawId.includes("lite")) score = 58.0;
+
+      const entry = {
+        name,
+        score,
+        openrouter_id: m.id,
+        context_length: m.context_length,
+        tier: determineTier(score),
+        source: "openrouter"
+      };
+
+      if (key) parsed[key] = entry;
+      if (rawKey) parsed[rawKey] = entry;
+    }
+    console.log(`[+] Parsed ${Object.keys(parsed).length} model entries from OpenRouter.`);
+    return parsed;
+  } catch (err) {
+    console.warn(`[!] Note: Could not fetch OpenRouter models (${err.message}). Skipping.`);
+    return null;
+  }
+}
+
 async function updateBenchmarks() {
   console.log("[*] Checking latest empirical coding benchmarks...");
   
@@ -195,12 +276,14 @@ async function updateBenchmarks() {
   const merged = { ...BASELINE };
 
   // Fetch live sources; the calibrated baseline always wins, later sources only fill gaps
-  const liveEvalPlus = await fetchEvalPlusBenchmarks();
+  const liveBenchLM = await fetchBenchLMBenchmarks();
   const liveSweBench = await fetchSweBenchVerified();
+  const liveEvalPlus = await fetchEvalPlusBenchmarks();
   const liveLcb = await fetchLiveCodeBench();
+  const liveOpenRouter = await fetchOpenRouterCatalog();
 
   let added = 0;
-  for (const dataset of [liveEvalPlus, liveSweBench, liveLcb]) {
+  for (const dataset of [liveBenchLM, liveSweBench, liveEvalPlus, liveLcb, liveOpenRouter]) {
     if (!dataset || Object.keys(dataset).length === 0) continue;
     console.log(`[+] Fetched ${Object.keys(dataset).length} models from ${Object.values(dataset)[0]?.source || "live"} source.`);
     for (const [key, data] of Object.entries(dataset)) {
@@ -231,4 +314,4 @@ if (require.main === module) {
 // determineTier). sync.js imports this instead of restating the number.
 const SMART_MIN_SCORE = 60;
 
-module.exports = { updateBenchmarks, determineTier, normalizeKey, fetchSweBenchVerified, fetchLiveCodeBench, SMART_MIN_SCORE, BENCHMARKS_PATH };
+module.exports = { updateBenchmarks, determineTier, normalizeKey, fetchBenchLMBenchmarks, fetchOpenRouterCatalog, fetchSweBenchVerified, fetchLiveCodeBench, SMART_MIN_SCORE, BENCHMARKS_PATH };
