@@ -158,7 +158,7 @@ async function fetchDisabledModels(routerUrl, token) {
 /**
  * Test a single model via 9router /api/models/test
  */
-async function testOneModel(modelId, routerUrl, token) {
+async function testOneModel(modelId, routerUrl, token, timeoutMs = 15000) {
   const startTime = Date.now();
   try {
     const testRes = await fetch(`${routerUrl}/api/models/test`, {
@@ -167,21 +167,41 @@ async function testOneModel(modelId, routerUrl, token) {
         "Content-Type": "application/json",
         ...(token ? (token.startsWith("sk-") ? { "Authorization": `Bearer ${token}` } : { "x-9r-cli-token": token, "Authorization": `Bearer ${token}` }) : {}),
       },
-      body: JSON.stringify({ model: modelId, kind: "llm" }),
-      signal: AbortSignal.timeout(5000),
+      body: JSON.stringify({
+        model: modelId,
+        kind: "llm",
+        messages: [{ role: "user", content: "ping" }]
+      }),
+      signal: AbortSignal.timeout(timeoutMs),
     });
     const latencyMs = Date.now() - startTime;
     const data = await testRes.json().catch(() => ({}));
+
+    if (data.ok || (testRes.ok && !data.error)) {
+      return {
+        ok: true,
+        latencyMs,
+        error: null,
+        isTimeout: false,
+      };
+    }
+
+    const errMsg = typeof data.error === "object" ? (data.error.message || JSON.stringify(data.error)) : (data.error || `HTTP ${testRes.status}`);
+    const isTimeout = /timeout|timed out|abort/i.test(errMsg);
+
     return {
-      ok: Boolean(data.ok),
+      ok: false,
       latencyMs,
-      error: data.ok ? null : data.error || "Gagal",
+      error: errMsg,
+      isTimeout,
     };
   } catch (err) {
+    const isTimeout = err.name === "TimeoutError" || /timeout|abort/i.test(err.message);
     return {
       ok: false,
       latencyMs: Date.now() - startTime,
-      error: err.message,
+      error: isTimeout ? "Request Timeout" : err.message,
+      isTimeout,
     };
   }
 }
@@ -393,9 +413,10 @@ async function _runTestLoop({ routerUrl, token, providerFilter, autoDisableFaile
     g.progress.currentModel = "Memulai pengetesan...";
     persistState();
 
-    // 2. Test loop
+    // 2. Test loop (Pass 1: Standar timeout 15 detik)
     let passed = 0;
     let failed = 0;
+    const timeoutQueue = [];
 
     for (let i = 0; i < listToTest.length; i++) {
       if (g.stopRequested) break;
@@ -407,32 +428,82 @@ async function _runTestLoop({ routerUrl, token, providerFilter, autoDisableFaile
       g.progress.currentModel = modelId;
       g.progress.results[modelId] = { loading: true, latencyMs: 0, ok: false, error: null };
 
-      // Persist every 5 models to reduce I/O
       if (i % 5 === 0) persistState();
 
-      const result = await testOneModel(modelId, routerUrl, token);
+      const result = await testOneModel(modelId, routerUrl, token, 15000);
 
       if (result.ok) {
         passed++;
+        g.progress.results[modelId] = {
+          loading: false,
+          latencyMs: result.latencyMs,
+          ok: true,
+          error: null,
+        };
+      } else if (result.isTimeout) {
+        // Jangan disable/delete saat timeout. Kumpulkan untuk retry di akhir!
+        timeoutQueue.push({ modelItem: m, modelId });
+        g.progress.results[modelId] = {
+          loading: false,
+          latencyMs: result.latencyMs,
+          ok: false,
+          error: "Timeout (Mengantri pengujian ulang di akhir...)",
+          isPendingRetry: true,
+        };
       } else {
+        // Gagal definitif dari upstream (misal: Insufficient credit, not found, invalid API key)
         failed++;
         if (autoDisableFailed) {
           await autoDisableModel(m.provider, m.model, modelId, routerUrl, token, providers);
         }
+        g.progress.results[modelId] = {
+          loading: false,
+          latencyMs: result.latencyMs,
+          ok: false,
+          error: result.error,
+        };
       }
 
       g.progress.passed = passed;
       g.progress.failed = failed;
-      g.progress.results[modelId] = {
-        loading: false,
-        latencyMs: result.latencyMs,
-        ok: result.ok,
-        error: result.error,
-      };
+    }
 
-      // Pacing delay 120ms anti rate-limiting
-      if (!g.stopRequested) {
-        await new Promise((r) => setTimeout(r, 120));
+    // 2b. Retry Loop untuk Model yang Timeout (Pass 2: Extended Timeout 35 detik di akhir)
+    if (timeoutQueue.length > 0 && !g.stopRequested) {
+      for (let j = 0; j < timeoutQueue.length; j++) {
+        if (g.stopRequested) break;
+        const { modelItem: m, modelId } = timeoutQueue[j];
+
+        g.progress.currentModel = `[Retry Timeout ${j + 1}/${timeoutQueue.length}] ${modelId}`;
+        g.progress.results[modelId] = { loading: true, latencyMs: 0, ok: false, error: "Retrying dengan timeout 35s..." };
+        persistState();
+
+        const retryResult = await testOneModel(modelId, routerUrl, token, 35000);
+
+        if (retryResult.ok) {
+          passed++;
+          g.progress.results[modelId] = {
+            loading: false,
+            latencyMs: retryResult.latencyMs,
+            ok: true,
+            error: null,
+          };
+        } else {
+          // Tetap gagal setelah retry 35 detik
+          failed++;
+          if (autoDisableFailed) {
+            await autoDisableModel(m.provider, m.model, modelId, routerUrl, token, providers);
+          }
+          g.progress.results[modelId] = {
+            loading: false,
+            latencyMs: retryResult.latencyMs,
+            ok: false,
+            error: retryResult.error,
+          };
+        }
+
+        g.progress.passed = passed;
+        g.progress.failed = failed;
       }
     }
 
