@@ -140,30 +140,54 @@ async function autoDisableModel(provider, rawModel, fullModel, routerUrl, token,
     const pKey = String(provider || "").trim();
     if (!pKey) return;
 
+    const authHeaders = {
+      "Content-Type": "application/json",
+      ...(token ? (token.startsWith("sk-") ? { "Authorization": `Bearer ${token}` } : { "x-9r-cli-token": token, "Authorization": `Bearer ${token}` }) : {}),
+    };
+
+    // 1. Check if this is a custom model / custom node and delete it permanently
+    const idToDelete = rawModel || fullModel;
+    const isCustomNode = pKey.startsWith("openai-compatible-") || pKey.startsWith("anthropic-compatible-") ||
+      (providers || []).some((p) => p.isCustom && (p.key === pKey || p.providerKey === pKey || p.defaultPrefix === pKey));
+
+    if (isCustomNode || idToDelete) {
+      // Try deleting custom model keys by alias and full model pattern
+      const candidateKeys = [
+        `${pKey}|${idToDelete}|llm`,
+        `${pKey}|${rawModel}|llm`,
+        idToDelete,
+        rawModel,
+      ].filter(Boolean);
+
+      for (const k of candidateKeys) {
+        try {
+          await fetch(`${routerUrl}/api/models/custom/${encodeURIComponent(k)}`, {
+            method: "DELETE",
+            headers: authHeaders,
+            signal: AbortSignal.timeout(5000),
+          });
+        } catch (_) {}
+      }
+    }
+
+    // 2. Also register in disabledModels KV scope for complete routing blackout
     const res = await fetch(`${routerUrl}/api/models/disabled`, {
-      headers: {
-        "Content-Type": "application/json",
-        ...(token ? (token.startsWith("sk-") ? { "Authorization": `Bearer ${token}` } : { "x-9r-cli-token": token, "Authorization": `Bearer ${token}` }) : {}),
-      },
+      headers: authHeaders,
       signal: AbortSignal.timeout(10000),
     });
     const currentMap = await res.json().catch(() => ({}));
     const existingList = Array.isArray(currentMap[pKey]) ? currentMap[pKey] : [];
 
     const idToAdd = rawModel || fullModel;
-    if (!idToAdd || existingList.includes(idToAdd)) return;
-
-    const updatedList = [...existingList, idToAdd];
-
-    await fetch(`${routerUrl}/api/models/disabled/${encodeURIComponent(pKey)}`, {
-      method: "PUT",
-      headers: {
-        "Content-Type": "application/json",
-        ...(token ? (token.startsWith("sk-") ? { "Authorization": `Bearer ${token}` } : { "x-9r-cli-token": token, "Authorization": `Bearer ${token}` }) : {}),
-      },
-      body: JSON.stringify({ disabledModels: updatedList }),
-      signal: AbortSignal.timeout(10000),
-    });
+    if (idToAdd && !existingList.includes(idToAdd)) {
+      const updatedList = [...existingList, idToAdd];
+      await fetch(`${routerUrl}/api/models/disabled/${encodeURIComponent(pKey)}`, {
+        method: "PUT",
+        headers: authHeaders,
+        body: JSON.stringify({ disabledModels: updatedList }),
+        signal: AbortSignal.timeout(10000),
+      });
+    }
   } catch (_) {}
 }
 
